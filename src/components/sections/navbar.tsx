@@ -65,15 +65,16 @@ export default function Navbar() {
                 /> */}
                             <div className="flex flex-col">
                                 <span
-                                    className={`text-base md:text-lg lg:text-xl font-semibold tracking-tight leading-none transition-colors duration-300 text-green-500 pr-2 ${
-                                        isScrolled
-                                            ? "text-gray-900"
-                                            : "text-white"
-                                    }`}
+                                    className={`text-base md:text-lg lg:text-xl font-semibold tracking-tight leading-none transition-colors duration-300 text-green-500 pr-2 
+                                      ${
+                                          isScrolled
+                                              ? "text-gray-900"
+                                              : "text-white"
+                                      }
+                                    `}
                                     style={{
-                                        fontFamily:
-                                            "'Playfair Display', Georgia, serif",
-                                        fontStyle: "italic",
+                                        fontFamily: "'Roboto', sans-serif",
+                                        // fontStyle: "italic",
                                     }}
                                 >
                                     Evergreen
@@ -81,9 +82,8 @@ export default function Navbar() {
                                 <span
                                     className="text-[10px] md:text-xs font-bold tracking-wider uppercase mt-1 text-[#F2913F]"
                                     style={{
-                                        fontFamily:
-                                            "'Playfair Display', Georgia, serif",
-                                        fontStyle: "italic",
+                                        fontFamily: "'Roboto', sans-serif",
+                                        // fontStyle: "italic",
                                     }}
                                 >
                                     Group Of Companies
