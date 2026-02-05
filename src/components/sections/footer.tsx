@@ -22,13 +22,16 @@ export function Footer() {
                 /> */}
                             <span
                                 className="text-lg font-bold tracking-tight"
-                                style={{
-                                    fontFamily:
-                                        "'Playfair Display', Georgia, serif",
-                                    fontStyle: "italic",
-                                }}
+                                // style={{
+                                //   fontFamily : "'Birthstone', cursive",
+                                //     fontStyle: "italic",
+                                // }}
                             >
-                                <span className="text-green-500 pr-2">
+                                <span className="text-green-500 pr-2"
+                                // style={{
+                                //   fontFamily : "'Birthstone', cursive"
+                                // }}
+                                >
                                     Evergreen
                                 </span>
                                 Group Of Companies

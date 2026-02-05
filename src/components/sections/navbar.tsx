@@ -65,7 +65,7 @@ export default function Navbar() {
                 /> */}
                             <div className="flex flex-col">
                                 <span
-                                    className={`text-base md:text-lg lg:text-xl font-semibold tracking-tight leading-none transition-colors duration-300 ${
+                                    className={`text-base md:text-lg lg:text-xl font-semibold tracking-tight leading-none transition-colors duration-300 text-green-500 pr-2 ${
                                         isScrolled
                                             ? "text-gray-900"
                                             : "text-white"
@@ -76,12 +76,7 @@ export default function Navbar() {
                                         fontStyle: "italic",
                                     }}
                                 >
-                                    <span
-                                        className="text-green-500 pr-2"
-                                    >
-                                        Evergreen
-                                    </span>
-                                    Group
+                                    Evergreen
                                 </span>
                                 <span
                                     className="text-[10px] md:text-xs font-bold tracking-wider uppercase mt-1 text-[#F2913F]"
@@ -91,7 +86,7 @@ export default function Navbar() {
                                         fontStyle: "italic",
                                     }}
                                 >
-                                    Of Companies
+                                    Group Of Companies
                                 </span>
                             </div>
                         </a>
