@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #111827;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #111827;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #111827;
+
+    --color-primary: #F2913F;
+    --color-primary-foreground: #ffffff;
+
+    --color-secondary: #F2913F;
+    --color-secondary-foreground: #ffffff;
+
+    --color-muted: #f5f4f1;
+    --color-muted-foreground: #4b5563;
+
+    --color-accent: #F2913F;
+    --color-accent-foreground: #ffffff;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+
+  --color-border: #e5e7eb;
+  --color-input: #e5e7eb;
+    --color-ring: #F2913F;
+
+    --color-chart-1: #F2913F;
+    --color-chart-2: #F2913F;
+    --color-chart-3: #111827;
+    --color-chart-4: #4b5563;
+    --color-chart-5: #e5e7eb;
+
+    --color-sidebar: #ffffff;
+    --color-sidebar-foreground: #111827;
+    --color-sidebar-primary: #F2913F;
+    --color-sidebar-primary-foreground: #ffffff;
+    --color-sidebar-accent: #f5f4f1;
+    --color-sidebar-accent-foreground: #F2913F;
+    --color-sidebar-border: #e5e7eb;
+    --color-sidebar-ring: #F2913F;
+
+    --color-surface-light: #f5f4f1;
+    --color-deep-background: #000000;
+    --color-text-primary: #111827;
+    --color-text-secondary: #4b5563;
+  }
+
+  @layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+      border-color: #e5e7eb;
+    }
+
+    :root {
+      --background: #ffffff;
+      --foreground: #111827;
+      --card: #ffffff;
+      --card-foreground: #111827;
+      --popover: #ffffff;
+      --popover-foreground: #111827;
+      --primary: #F2913F;
+      --primary-foreground: #ffffff;
+      --secondary: #F2913F;
+      --secondary-foreground: #ffffff;
+      --muted: #f5f4f1;
+      --muted-foreground: #4b5563;
+      --accent: #F2913F;
+      --accent-foreground: #ffffff;
+      --destructive: #ef4444;
+      --destructive-foreground: #fafafa;
+      --border: #e5e7eb;
+      --input: #e5e7eb;
+      --ring: #F2913F;
+    --radius: 1rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--color-text-primary);
+    letter-spacing: -0.025em;
+  }
+
+  .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    max-width: 1440px;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+  }
+
+  .font-display {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+  }
+
+  .pill-button {
+    border-radius: 9999px;
+    padding: 0.625rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .news-card {
+    background-color: var(--color-card);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .news-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
