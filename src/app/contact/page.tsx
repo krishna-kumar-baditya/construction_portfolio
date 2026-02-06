@@ -68,8 +68,8 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-xl font-bold mb-2">Phone</h3>
                         <p className="text-gray-600 leading-relaxed font-medium">
-                          +91 343 254 6700 (General)<br />
-                          +91 987 654 3210 (Inquiries)
+                          +91 7001998007 (General)<br />
+                          {/* +91 7001998007 (Inquiries) */}
                         </p>
                       </div>
                     </div>
@@ -80,8 +80,8 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-xl font-bold mb-2">Email</h3>
                         <p className="text-gray-600 leading-relaxed font-medium">
-                          info@evergreen-mc.com<br />
-                          projects@evergreen-mc.com
+                          evergreen_construction@rediffmail.com<br />
+                          {/* evergreen_construction@rediffmail.com */}
                         </p>
                       </div>
                     </div>

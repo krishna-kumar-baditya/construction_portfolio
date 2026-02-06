@@ -83,21 +83,21 @@ const HeroSection = () => {
             {/* Main Headline */}
               <h1 className="flex flex-col items-center mb-6 sm:mb-8 md:mb-10">
                 <span className="text-white text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none mb-2">
-                  INFRASTRUCTURE
+                  ONE STOP SOLUTIONS
                 </span>
                   <span className="text-[#F2913F] text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none mb-2">
-                    MANAGEMENT
+                    FOR YOUR INDUSTRIAL NEEDS
                   </span>
-                <span className="text-white text-3xl sm:text-4xl lg:text-6xl font-black tracking-tight uppercase leading-none">
-                  CONSULTANTS
-                </span>
+                {/* <span className="text-white text-3xl sm:text-4xl lg:text-6xl font-black tracking-tight uppercase leading-none">
+                  
+                </span> */}
               </h1>
 
             {/* Animated Statistics */}
             <div className="grid grid-cols-2 gap-8 sm:gap-12 md:gap-24 mb-10 sm:mb-12 max-w-4xl mx-auto w-full">
                 <div className="flex flex-col items-center">
                   <div className="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-2 tabular-nums">
-                    {isVisible && <Counter end={25} suffix="+" />}
+                    {isVisible && <Counter end={50} suffix="+" />}
                   </div>
                   <div className="text-[#F2913F] text-sm sm:text-base md:text-lg font-medium uppercase tracking-wider">
                     years of expertise
@@ -105,7 +105,7 @@ const HeroSection = () => {
                 </div>
                 <div className="flex flex-col items-center">
                   <div className="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-2 tabular-nums">
-                    {isVisible && <Counter end={500} suffix="+" />}
+                    {isVisible && <Counter end={60} suffix="+" />}
                   </div>
                   <div className="text-[#F2913F] text-sm sm:text-base md:text-lg font-medium uppercase tracking-wider">
                     projects delivered

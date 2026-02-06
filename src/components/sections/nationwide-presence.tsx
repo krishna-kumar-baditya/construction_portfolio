@@ -1,4 +1,5 @@
 import React from 'react';
+import ClientSlides from './clinets_swiper';
 
 /**
  * NationwidePresence Component
@@ -23,7 +24,7 @@ const NationwidePresence: React.FC = () => {
         <div className="max-w-[1440px] mx-auto text-center z-10">
           {/* Main Heading */}
           <h2 className="text-[#F2913F] text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
-            Nationwide Presence.
+            Our Clients.
           </h2>
   
           {/* Decorative Gradient Line */}
@@ -32,19 +33,17 @@ const NationwidePresence: React.FC = () => {
           }}></div>
 
         {/* Subheading */}
-        <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-semibold mb-6 opacity-90 tracking-wide">
+        {/* <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-semibold mb-6 opacity-90 tracking-wide">
           From city metros to national corridors
-        </h3>
+        </h3> */}
 
-        {/* Body Text */}
-        <div className="max-w-xl mx-auto space-y-2">
-          <p className="text-gray-200 text-sm sm:text-base md:text-lg font-normal leading-relaxed opacity-80">
-            Our products run across India.
-          </p>
-          <p className="text-gray-200 text-sm sm:text-base md:text-lg font-normal leading-relaxed opacity-80">
-            We support both new and upgrade projects at every scale.
-          </p>
+        {/* ✅ Imported Client Swiper */}
+        <div className="mb-12">
+          <ClientSlides />
         </div>
+
+
+        
       </div>
 
       {/* Subtle Background Pattern/Texture if needed based on screenshots */}

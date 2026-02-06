@@ -2,33 +2,45 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { HardHat, Settings, ShieldCheck, Zap } from "lucide-react";
+import { HardHat, Factory , Truck , Flame,Handshake,Pickaxe   } from "lucide-react";
 
 const services = [
   {
-    title: "Civil Engineering",
+    title: "Civil & Mechanical Construction",
     description: "End-to-end infrastructure solutions, from structural design to large-scale construction management.",
     icon: HardHat,
     link: "/services/civil"
   },
   {
-    title: "Mechanical Engineering",
-    description: "Advanced mechanical systems, industrial automation, and sustainable energy solutions.",
-    icon: Settings,
+    title: "Foundry & Ferro Production Contracts",
+    description: "We provide comprehensive contract execution for foundry and ferro production, with a strong focus on operational efficiency, quality standards, and on-time delivery.",
+    icon: Factory ,
     link: "/services/mechanical"
   },
   {
-    title: "Project Management",
-    description: "Strategic planning and execution of complex engineering projects with a focus on efficiency.",
-    icon: ShieldCheck,
+    title: "Rake Handling & Raw Material Transportation",
+    description: "We manage rake handling and raw material transportation with a focus on safety, efficiency, and seamless coordination to ensure uninterrupted material flow across operations.",
+    icon: Truck ,
     link: "/services"
   },
   {
-    title: "Consulting",
-    description: "Technical advisory and feasibility studies for global infrastructure developments.",
-    icon: Zap,
+    title: "Fuel, Lubricants, Tyres & Minerals Supply",
+    description: "We ensure reliable supply of fuel, lubricants, tyres, and minerals, supporting continuous operations through consistent quality, timely delivery, and efficient logistics management.",
+    icon: Flame,
     link: "/services"
-  }
+  },
+  {
+    title: "Ready Mix Concrete",
+    description: "We supply high-quality ready mix concrete with consistent strength, precise batching, and timely delivery to meet project-specific construction requirements.",
+    icon: Handshake ,
+    link: "/services"
+  },
+  {
+    title: "Coal Mining & Transport",
+    description: "We deliver efficient coal mining and transportation services, ensuring safe operations, regulatory compliance, and reliable supply across the value chain.",
+    icon: Pickaxe ,
+    link: "/services"
+  },
 ];
 
 export default function ServicesSnapshot() {
@@ -55,7 +67,7 @@ export default function ServicesSnapshot() {
             </motion.h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <motion.div
                 key={service.title}
@@ -72,12 +84,12 @@ export default function ServicesSnapshot() {
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   {service.description}
                 </p>
-                <a
+                {/* <a
                   href={service.link}
                   className="text-[#F2913F] font-bold inline-flex items-center gap-2 hover:gap-4 transition-all duration-300"
                 >
                   Learn More <span>→</span>
-                </a>
+                </a> */}
               </motion.div>
             ))}
           </div>

@@ -65,20 +65,20 @@ export function Footer() {
 
                         <div className="space-y-4">
                             <a
-                                href="mailto:info@evergreen-mc.com"
+                                href="mailto:evergreen_construction@rediffmail.com"
                                 className="block text-[14px] text-gray-400 hover:text-[#F2913F] transition-colors"
                                 style={{ fontSize: "14px" }}
                             >
-                                info@evergreen-mc.com
+                                evergreen_construction@rediffmail.com
                             </a>
                             <a
-                                href="tel:+914039556700"
+                                href="tel:+917001998007"
                                 className="block text-[14px] text-gray-400 hover:text-[#F2913F] transition-colors"
                                 style={{ fontSize: "14px" }}
                             >
-                                +91 40 3955 6700
+                                +91 7001998007
                             </a>
-                            <div className="pt-2">
+                            {/* <div className="pt-2">
                                 <a
                                     href="https://linkedin.com"
                                     target="_blank"
@@ -88,7 +88,7 @@ export function Footer() {
                                 >
                                     <Linkedin size={18} />
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
@@ -100,7 +100,7 @@ export function Footer() {
                         <nav className="flex flex-col gap-4">
                             {[
                                 { label: "About Us", href: "/about" },
-                                { label: "Companies", href: "/companies" },
+                                { label: "Group Of Companies", href: "/companies" },
                                 { label: "Projects", href: "/projects" },
                                 { label: "Recruitment", href: "/recruitment" },
                                 { label: "Contact", href: "/contact" },

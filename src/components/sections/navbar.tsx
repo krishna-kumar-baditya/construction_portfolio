@@ -16,7 +16,7 @@ const NAV_LINKS = [
         ],
     },
     {
-        label: "Companies",
+        label: "Group Of Companies",
         href: "/companies",
         dropdown: [
             {
@@ -27,8 +27,30 @@ const NAV_LINKS = [
                 label: "EVERGREEN CONSTRUCTION DURGAPUR PVT. LTD.",
                 href: "/companies/ecpl",
             },
+            {
+                label: "V.R Minerals",
+                href: "/companies/vrm",
+            },
+            {
+                label: "EMPL",
+                href: "/companies/empl",
+            },
+            {
+                label: "EC",
+                href: "/companies/ec",
+            },
+            {
+                label: "Sunrise",
+                href: "/companies/sunrise",
+            },
+            {
+                label: "Sky High Concrete",
+                href: "/companies/shc",
+            },
         ],
     },
+        { label: "Infrastructure", href: "/infrastructure" },
+
     { label: "Projects", href: "/projects" },
     { label: "Recruitment", href: "/recruitment" },
     { label: "Contact", href: "/contact" },
@@ -49,20 +71,15 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 w-full ${
+            className={`fixed top-0 left-0 right-0 z-9999 transition-all duration-300 w-full ${
                 isScrolled ? "bg-white shadow-sm" : "bg-transparent"
             }`}
         >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto  px-4">
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
-                    <div className="flex-shrink-0">
+                    <div className="shrink-0">
                         <a href="/" className="flex items-center gap-3">
-                            {/* <img 
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/5f5702b0-00ea-450f-84bb-61992efa636a/emcl-1767453861486.png?width=8000&height=8000&resize=contain" 
-                  alt="Evergreen Management Consultants LLP" 
-                  className="h-14 md:h-16 w-auto object-contain"
-                /> */}
                             <div className="flex flex-col">
                                 <span
                                     className={`text-base md:text-lg lg:text-xl font-semibold tracking-tight leading-none transition-colors duration-300 text-green-500 pr-2 
