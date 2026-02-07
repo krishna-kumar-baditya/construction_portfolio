@@ -56,11 +56,11 @@ export default function AboutPage() {
                 </motion.div>
                 <div className="relative">
                   <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                    <img
-                      src="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&q=80&w=1000"
-                      alt="Engineering Legacy"
-                      className="w-full h-full object-cover"
-                    />
+                                    <img
+                                        src="https://images.unsplash.com/photo-1694521787162-5373b598945c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="Engineering Legacy"
+                                        className="w-full h-full object-cover"
+                                    />
                   </div>
                 </div>
               </div>

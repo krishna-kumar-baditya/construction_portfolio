@@ -102,6 +102,7 @@ export function Footer() {
                                 { label: "About Us", href: "/about" },
                                 { label: "Group Of Companies", href: "/companies" },
                                 { label: "Projects", href: "/projects" },
+                                { label: "Infrastructure", href: "/infrastructure" },
                                 { label: "Recruitment", href: "/recruitment" },
                                 { label: "Contact", href: "/contact" },
                             ].map((link) => (
@@ -150,7 +151,7 @@ export function Footer() {
                 <div className="mt-16 pt-8 border-t border-gray-800">
                     <div className="text-center text-[12px] md:text-[14px] text-gray-400 leading-relaxed font-normal">
                         <span>
-                            © 2025 Evergreen Green Group Of Companies |{" "}
+                            © 2026 Evergreen Green Group Of Companies |{" "}
                         </span>
                         <span className="font-bold text-gray-300">
                             All rights reserved.

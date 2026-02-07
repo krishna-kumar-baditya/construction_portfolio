@@ -66,7 +66,6 @@ const HeroSection = () => {
               playsInline
               className="w-full h-full object-cover pointer-events-none"
             >
-              <source src="/videos/hero-background.mp4" type="video/mp4" />
               <source src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/video-1767032139684.mp4" type="video/mp4" />
             </video>
           {/* Dark Overlay - bg-black/60 as per design instructions */}
