@@ -6,6 +6,7 @@ import Navbar from "@/components/sections/navbar";
 import { Footer } from "@/components/sections/footer";
 import FloatingQuoteButton from "@/components/ui/floating-quote-button";
 import { Target, Users, Leaf, History } from "lucide-react";
+import ConstructionProjectsTable from "@/components/about/ConstructionProjectsTable";
 
 export default function AboutPage() {
     return (
@@ -51,20 +52,23 @@ export default function AboutPage() {
                                     A Legacy of Engineering Excellence
                                 </h3>
                                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                    Founded in 1999, Evergreen Management
-                                    Consultants LLP began with a vision to
-                                    revolutionize the engineering landscape in
-                                    India. What started as a small consulting
-                                    firm has grown into a multi-disciplinary
-                                    powerhouse, delivering major infrastructure
-                                    projects across the globe.
+                                    Evergreen Group is one of the oldest and
+                                    leading business names in Asansol-Durgapur
+                                    industrial belt. Established in 1996, we
+                                    have over three decades of expertise in
+                                    civil, structural and production contracts.
                                 </p>
                                 <p className="text-lg text-gray-600 leading-relaxed">
-                                    Over the decades, we have evolved with the
-                                    industry, embracing digital transformation
-                                    and sustainable practices to ensure our
-                                    solutions are not just effective today, but
-                                    resilient for tomorrow.
+                                    We also undertake raw material
+                                    transportation & handling and have our own
+                                    complete machinery fleet ranging from Hydra,
+                                    Loaders, JCB, Poclain and Tippers. Over the
+                                    years, we have undertaken many challenging
+                                    projects across Eastern & Central India and
+                                    have accumulated skills, know-how the
+                                    experiences in building solutions, project
+                                    management services, building trades and
+                                    related engineering works.{" "}
                                 </p>
                             </motion.div>
                             <div className="relative">
@@ -91,14 +95,15 @@ export default function AboutPage() {
                                 className="bg-gray-800 p-12 rounded-3xl"
                             >
                                 <Target className="text-[#F2913F] w-16 h-16 mb-8" />
-                                <h3 className="text-3xl font-bold mb-6">
+                                <h3 className="text-[#F2913F] text-3xl font-bold mb-6">
                                     Our Mission
                                 </h3>
                                 <p className="text-xl text-gray-400 leading-relaxed">
-                                    To provide innovative, sustainable, and
-                                    cost-effective engineering solutions that
-                                    empower communities and drive global
-                                    progress through technical excellence.
+                                    To provide quality workmanship and customer
+                                    service and maintain the highest level of
+                                    professionalism, honesty and fairness in our
+                                    relationships with our customers, employees
+                                    and vendors.{" "}
                                 </p>
                             </motion.div>
                             <motion.div
@@ -113,14 +118,23 @@ export default function AboutPage() {
                                     Our Vision
                                 </h3>
                                 <p className="text-xl font-medium leading-relaxed">
-                                    To be the global leader in infrastructure
-                                    management, recognized for our commitment to
-                                    sustainability, innovation, and the highest
-                                    standards of integrity.
+                                    To be the leading provider of industrial and
+                                    commercial construction services in the
+                                    region, known for our commitment to quality
+                                    and customer satisfaction. To grow
+                                    continually by providing useful and
+                                    significant services and solutions to
+                                    markets we already serve and to expand into
+                                    new areas that build on our competencies and
+                                    customer interests.{" "}
                                 </p>
                             </motion.div>
                         </div>
                     </div>
+                </section>
+
+                <section id="construction-projects-table">
+                    <ConstructionProjectsTable/>
                 </section>
 
                 {/* Leadership */}

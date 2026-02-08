@@ -110,7 +110,7 @@ export default function Navbar() {
                     </div>
 
                     {/* Desktop Navigation - Centered */}
-                    <div className="hidden lg:flex items-center justify-center flex-1 gap-10">
+                    <div className="hidden lg:flex items-center justify-center flex-1 gap-10 uppercase">
                         {NAV_LINKS.map((link) => (
                             <div
                                 key={link.label}
