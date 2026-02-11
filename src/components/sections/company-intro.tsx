@@ -20,11 +20,11 @@ export default function CompanyIntro() {
                         <h3 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
                             Driving Infrastructure <br />
                             <span className="text-[#F2913F]">
-                                Excellence Since 1996
+                                Excellence Since 1988
                             </span>
                         </h3>
                         <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                            Established in 1996, Evergreen Group is a leading
+                            Established in 1988, Evergreen Group is a leading
                             name in the Asansol–Durgapur industrial belt, with
                             over three decades of expertise in civil,
                             structural, and production contracts. Backed by a

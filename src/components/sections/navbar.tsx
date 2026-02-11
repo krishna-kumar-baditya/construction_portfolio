@@ -36,20 +36,24 @@ const NAV_LINKS = [
                 href: "/companies/empl",
             },
             {
-                label: "EC",
+                label: "Evergreen construction",
                 href: "/companies/ec",
             },
             {
-                label: "Sunrise",
+                label: "Sunrise Movers",
                 href: "/companies/sunrise",
             },
             {
                 label: "Sky High Concrete",
                 href: "/companies/shc",
             },
+            {
+                label: "Evergreen rmc Services llp",
+                href: "/companies/shc",
+            },
         ],
     },
-        { label: "Infrastructure", href: "/infrastructure" },
+    { label: "Infrastructure", href: "/infrastructure" },
 
     { label: "Projects", href: "/projects" },
     { label: "Recruitment", href: "/recruitment" },

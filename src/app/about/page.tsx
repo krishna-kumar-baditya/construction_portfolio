@@ -54,7 +54,7 @@ export default function AboutPage() {
                                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                                     Evergreen Group is one of the oldest and
                                     leading business names in Asansol-Durgapur
-                                    industrial belt. Established in 1996, we
+                                    industrial belt. Established in 1988, we
                                     have over three decades of expertise in
                                     civil, structural and production contracts.
                                 </p>
