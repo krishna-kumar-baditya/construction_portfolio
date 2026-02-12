@@ -420,13 +420,7 @@ export const worksData = [
             "Land Development, Construction of Compound Wall & Workshop at Asansol",
         orderValue: 17500000,
         client: "S.T ASSOCIATES",
-    },
-    {
-        slNo: 62,
-        description: "Construction of Labour Quarter",
-        orderValue: null,
-        client: null,
-    },
+    }
 ];
 
 const ROWS_PER_PAGE = 10;
@@ -439,7 +433,7 @@ export default function ConstructionProjectsTable() {
     const startIndex = (currentPage - 1) * ROWS_PER_PAGE;
     const currentRows = worksData.slice(startIndex, startIndex + ROWS_PER_PAGE);
 
-    const formatCurrency = (value) => {
+    const formatCurrency = (value:any) => {
         if (!value) return "—";
         return ` ${value.toLocaleString("en-IN")}`;
     };
