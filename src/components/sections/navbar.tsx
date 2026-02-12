@@ -137,7 +137,7 @@ export default function Navbar() {
                                     {link.dropdown && (
                                         <ChevronDown
                                             size={14}
-                                            className={`transition-transform duration-300 ${
+                                            className={`transition-transform duration-300 uppercase ${
                                                 activeDropdown === link.label
                                                     ? "rotate-180"
                                                     : ""
@@ -160,7 +160,7 @@ export default function Navbar() {
                                                 <a
                                                     key={subItem.label}
                                                     href={subItem.href}
-                                                    className="block px-6 py-2.5 text-sm font-medium text-gray-700 hover:text-[#F2913F] hover:bg-gray-50 transition-all duration-200"
+                                                    className="block px-6 py-2.5 text-sm font-medium text-gray-700 hover:text-[#F2913F] hover:bg-gray-50 transition-all duration-200 uppercase"
                                                 >
                                                     {subItem.label}
                                                 </a>
@@ -238,7 +238,7 @@ export default function Navbar() {
                                                 onClick={() =>
                                                     setMobileMenuOpen(false)
                                                 }
-                                                className="text-lg text-gray-600 hover:text-[#F2913F]"
+                                                className="text-lg text-gray-600 hover:text-[#F2913F] uppercase"
                                             >
                                                 {sub.label}
                                             </a>
