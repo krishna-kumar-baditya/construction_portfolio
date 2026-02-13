@@ -2,10 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Navbar from "@/components/sections/navbar";
-import { Footer } from "@/components/sections/footer";
-import FloatingQuoteButton from "@/components/ui/floating-quote-button";
-import { HardHat, Settings, Building2, Truck, Cog, Zap } from "lucide-react";
+import { HardHat, Building2, Cog, Zap } from "lucide-react";
 
 const serviceDetails = [
   {
@@ -55,7 +52,6 @@ const serviceDetails = [
 export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
       <main className="flex-grow pt-[103px]">
         {/* Hero */}
           <section className="bg-black py-24">
@@ -149,8 +145,6 @@ export default function ServicesPage() {
             </div>
           </section>
       </main>
-      <Footer />
-      <FloatingQuoteButton />
     </div>
   );
 }

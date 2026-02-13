@@ -14,14 +14,13 @@ import ClientSlides from './clinets_swiper';
 const NationwidePresence: React.FC = () => {
   return (
     <section 
-      className="relative w-full py-20 px-4 sm:py-24 md:py-32 flex flex-col items-center justify-center overflow-hidden"
+      className="relative w-full h-112.5 py-20 px-4 sm:py-24 md:py-32 flex flex-col items-center justify-center overflow-hidden"
       style={{
         // A radial or linear gradient as seen in the screenshots
         background: 'linear-gradient(135deg, #7A7A7A 0%, #5C5C5C 50%, #7A7A7A 100%)',
-        minHeight: '450px'
       }}
     >
-        <div className="max-w-[1440px] mx-auto text-center z-10">
+        <div className="max-w-[1440px] mx-auto text-center z-10 ">
           {/* Main Heading */}
           <h2 className="text-[#F2913F] text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
             Our Clients.
@@ -38,7 +37,7 @@ const NationwidePresence: React.FC = () => {
         </h3> */}
 
         {/* ✅ Imported Client Swiper */}
-        <div className="mb-12">
+        <div className="mb-12 ">
           <ClientSlides />
         </div>
 

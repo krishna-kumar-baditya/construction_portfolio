@@ -46,9 +46,6 @@ export default function ClientSlides() {
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
       }}
-      navigation
-    //   pagination={{ clickable: true }}
-    //   scrollbar={{ draggable: true }}
       breakpoints={{
         320: { slidesPerView: 1 },
         640: { slidesPerView: 2 },

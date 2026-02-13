@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Linkedin, MapPin, ArrowUp } from "lucide-react";
+import {  MapPin, ArrowUp } from "lucide-react";
 
 export function Footer() {
     const scrollToTop = () => {
@@ -15,22 +15,11 @@ export function Footer() {
                     {/* Logo and Address Section */}
                     <div className="lg:col-span-4">
                         <div className="flex items-center gap-3 mb-8">
-                            {/* <img 
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/5f5702b0-00ea-450f-84bb-61992efa636a/emcl-1767453861486.png?width=8000&height=8000&resize=contain" 
-                  alt="Evergreen Management Consultants LLP" 
-                  className="h-10 w-auto object-contain brightness-0 invert"
-                /> */}
                             <span
                                 className="text-lg font-bold tracking-tight"
-                                // style={{
-                                //   fontFamily : "'Birthstone', cursive",
-                                //     fontStyle: "italic",
-                                // }}
                             >
                                 <span className="text-green-500 pr-2"
-                                // style={{
-                                //   fontFamily : "'Birthstone', cursive"
-                                // }}
+                                
                                 >
                                     Evergreen
                                 </span>
@@ -78,32 +67,21 @@ export function Footer() {
                             >
                                 +91 7001998007
                             </a>
-                            {/* <div className="pt-2">
-                                <a
-                                    href="https://linkedin.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center justify-center w-[36px] h-[36px] rounded-full bg-[#1e2329] text-white hover:text-[#F2913F] transition-all duration-300"
-                                    aria-label="LinkedIn Profile"
-                                >
-                                    <Linkedin size={18} />
-                                </a>
-                            </div> */}
                         </div>
                     </div>
 
                     {/* Quick Links Section */}
                     <div className="lg:col-span-3">
-                        <h4 className="text-[16px] font-bold mb-6">
+                        <h4 className="text-[16px] text-white font-bold mb-6">
                             Quick Links
                         </h4>
                         <nav className="flex flex-col gap-4">
                             {[
                                 { label: "About Us", href: "/about" },
-                                { label: "Group Of Companies", href: "/companies" },
+                                { label: "Group  Companies", href: "/companies" },
                                 { label: "Projects", href: "/projects" },
                                 { label: "Infrastructure", href: "/infrastructure" },
-                                { label: "Recruitment", href: "/recruitment" },
+                                { label: "Gallery", href: "/gallery" },
                                 { label: "Contact", href: "/contact" },
                             ].map((link) => (
                                 <a

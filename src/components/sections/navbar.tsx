@@ -16,7 +16,7 @@ const NAV_LINKS = [
         ],
     },
     {
-        label: "Group Of Companies",
+        label: "Group Companies",
         href: "/companies",
         dropdown: [
             {
@@ -32,15 +32,11 @@ const NAV_LINKS = [
                 href: "/companies/vrm",
             },
             {
-                label: "EMPL",
+                label: "EVERGREEN MOVERS PVT. LTD.",
                 href: "/companies/empl",
             },
             {
-                label: "Evergreen construction",
-                href: "/companies/ec",
-            },
-            {
-                label: "Sunrise Movers",
+                label: "Sunrise Movers & Logistics",
                 href: "/companies/sunrise",
             },
             {
@@ -48,15 +44,15 @@ const NAV_LINKS = [
                 href: "/companies/shc",
             },
             {
-                label: "Evergreen rmc Services llp",
+                label: "JR AGNTECH",
                 href: "/companies/shc",
-            },
+            }
         ],
     },
     { label: "Infrastructure", href: "/infrastructure" },
 
     { label: "Projects", href: "/projects" },
-    { label: "Recruitment", href: "/recruitment" },
+    { label: "Gallery", href: "/gallery" },
     { label: "Contact", href: "/contact" },
 ];
 
@@ -79,10 +75,10 @@ export default function Navbar() {
                 isScrolled ? "bg-white shadow-sm" : "bg-transparent"
             }`}
         >
-            <div className="max-w-7xl mx-auto  px-4">
+            <div className=" mx-auto  px-16">
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
-                    <div className="shrink-0">
+                    <div className="`shrink-0`">
                         <a href="/" className="flex items-center gap-3">
                             <div className="flex flex-col">
                                 <span

@@ -2,16 +2,12 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Navbar from "@/components/sections/navbar";
-import { Footer } from "@/components/sections/footer";
-import FloatingQuoteButton from "@/components/ui/floating-quote-button";
 import { Target, Users, Leaf, History } from "lucide-react";
 import ConstructionProjectsTable from "@/components/about/ConstructionProjectsTable";
 
 export default function AboutPage() {
     return (
         <div className="flex flex-col min-h-screen">
-            <Navbar />
             <main className="flex-grow pt-[103px]">
                 {/* Hero Section */}
                 <section className="relative py-24 bg-black overflow-hidden">
@@ -133,72 +129,10 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <section id="construction-projects-table">
+                {/* <section id="construction-projects-table">
                     <ConstructionProjectsTable/>
-                </section>
-
-                {/* Leadership */}
-                {/* <section id="leadership" className="py-24 bg-white">
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="text-center mb-16">
-                            <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-                                Our Leadership
-                            </h2>
-                            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                                Guided by industry veterans with a passion for
-                                excellence and a vision for the future.
-                            </p>
-                        </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-                            {[
-                                {
-                                    name: "S. K. Gupta",
-                                    role: "Managing Partner",
-                                    img: "https://i.pravatar.cc/300?u=sk",
-                                },
-                                {
-                                    name: "Anita Rao",
-                                    role: "Technical Director",
-                                    img: "https://i.pravatar.cc/300?u=ar",
-                                },
-                                {
-                                    name: "Rahul Sharma",
-                                    role: "Head of Operations",
-                                    img: "https://i.pravatar.cc/300?u=rs",
-                                },
-                            ].map((member, i) => (
-                                <motion.div
-                                    key={member.name}
-                                    initial={{ opacity: 0, scale: 0.9 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: i * 0.1 }}
-                                    className="group"
-                                >
-                                    <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-6 relative">
-                                        <img
-                                            src={member.img}
-                                            alt={member.name}
-                                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                                        />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
-                                            <p className="text-white font-medium">
-                                                Over 20 years of experience in
-                                                infrastructure management.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <h4 className="text-2xl font-bold text-gray-900">
-                                        {member.name}
-                                    </h4>
-                                    <p className="text-[#F2913F] font-bold uppercase tracking-wider text-sm">
-                                        {member.role}
-                                    </p>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </div>
                 </section> */}
+
 
                 {/* Sustainability */}
                 <section id="sustainability" className="py-24 bg-gray-50">
@@ -246,8 +180,6 @@ export default function AboutPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
-            <FloatingQuoteButton />
         </div>
     );
 }

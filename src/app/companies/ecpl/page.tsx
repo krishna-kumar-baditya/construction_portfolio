@@ -2,15 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Navbar from "@/components/sections/navbar";
-import { Footer } from "@/components/sections/footer";
-import FloatingQuoteButton from "@/components/ui/floating-quote-button";
-import { Target, Users, Leaf, History } from "lucide-react";
+import { Target, Users, History } from "lucide-react";
 
 export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
       <main className="flex-grow pt-[103px]">
         {/* Hero Section */}
         <section className="relative py-24 bg-black overflow-hidden">
@@ -102,8 +98,6 @@ export default function AboutPage() {
   
           
       </main>
-      <Footer />
-      <FloatingQuoteButton />
     </div>
   );
 }
