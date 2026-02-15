@@ -1,106 +1,137 @@
-const equipmentData = [
-  { slNo: 1, description: "Excavator (L & T) Komatsu PC-300-6", quantity: "1 No." },
-  { slNo: 2, description: "Excavator (L & T) Komatsu PC-200-6", quantity: "5 Nos." },
-  { slNo: 3, description: "Excavator (L & T) CK-72", quantity: "1 No." },
-  { slNo: 4, description: "Excavator (L & T) PC-71", quantity: "2 Nos." },
-  { slNo: 5, description: "RMC Batching plant - 30 Cum/Hr.", quantity: "1 No." },
-  { slNo: 6, description: "RMC Batching plant - 18 Cum/Hr.", quantity: "1 No." },
-  { slNo: 7, description: "Concrete Pump", quantity: "2 Nos." },
-  { slNo: 8, description: "Transit Mixer", quantity: "26 Nos." },
-  { slNo: 9, description: "Bulker (Cement / Fly Ash)", quantity: "2 Nos." },
-  { slNo: 10, description: "Dozer (D 80 -2 Nos. & D40-1 No.)", quantity: "3 Nos." },
-  { slNo: 11, description: "Motor grader (BEML)", quantity: "2 Nos." },
-  { slNo: 12, description: "Crawler Drill (I/R)", quantity: "2 Nos." },
-  { slNo: 13, description: "Payloader (HM-2021)", quantity: "6 Nos." },
-  { slNo: 14, description: "Backhoe Loader", quantity: "6 Nos." },
-  { slNo: 15, description: "Vibratory Roller (Compactor)", quantity: "4 Nos." },
-  { slNo: 16, description: "Road Roller (8-10 M/T. JESSOP)", quantity: "1 No." },
-  { slNo: 17, description: "Dumper - HYWA (10 wheelers)", quantity: "24 Nos." },
-  { slNo: 18, description: "Dumper (6 wheelers)", quantity: "24 Nos." },
-  { slNo: 19, description: "Truck", quantity: "4 Nos." },
-  { slNo: 20, description: "Water Tanker", quantity: "2 Nos." },
-  { slNo: 21, description: "Mixer Machine", quantity: "9 Nos." },
-  { slNo: 22, description: "Vibrator Machine", quantity: "8 Nos." },
-  { slNo: 23, description: "Steel Plates & Scaffolding", quantity: "2000 Sq.Mtrs." },
-  { slNo: 24, description: "Winch (Electric)", quantity: "1 No." },
-  { slNo: 25, description: "Theodolite", quantity: "2 Nos." },
-  { slNo: 26, description: "Levelling Instrument", quantity: "4 Nos." },
-  { slNo: 27, description: "Water Pump (3 Diesel & 2 Elect)", quantity: "5 Nos." },
-  { slNo: 28, description: "Diesel Welding Generator", quantity: "3 Nos." },
-  { slNo: 29, description: "Welding Machine (Electrical)", quantity: "7 Nos." },
-  { slNo: 30, description: "Compressor", quantity: "2 Nos." },
-  { slNo: 31, description: "Pneumatic Holiman Jack Hammers", quantity: "4 Nos." },
-  { slNo: 33, description: "Crusher Machine", quantity: "1 No." }
+const equipmentList = [
+    { id: 1, description: "Excavator 300", quantity: 2, unit: "Nos." },
+    { id: 2, description: "Excavator 200", quantity: 8, unit: "Nos." },
+    { id: 3, description: "Payloader", quantity: 10, unit: "Nos." },
+    {
+        id: 4,
+        description: "Dumper - HYWA (10 wheelers)",
+        quantity: 50,
+        unit: "Nos.",
+    },
+    {
+        id: 5,
+        description: "Dumper - HYWA (12 wheelers)",
+        quantity: 34,
+        unit: "Nos.",
+    },
+    {
+        id: 6,
+        description: "Dumper - HYWA (16 wheelers)",
+        quantity: 21,
+        unit: "Nos.",
+    },
+    {
+        id: 7,
+        description: "RMC Batching Plant - 30 Cum/Hr.",
+        quantity: 1,
+        unit: "Nos.",
+    },
+    {
+        id: 8,
+        description: "RMC Batching Plant - 18 Cum/Hr.",
+        quantity: 1,
+        unit: "Nos.",
+    },
+    { id: 9, description: "Concrete Pump", quantity: 2, unit: "Nos." },
+    { id: 10, description: "Transit Mixer", quantity: 15, unit: "Nos." },
+    { id: 11, description: "Hydra", quantity: 6, unit: "Nos." },
+    { id: 12, description: "Farana Crane", quantity: 1, unit: "Nos." },
+    { id: 13, description: "Road Roller", quantity: 1, unit: "Nos." },
+    { id: 14, description: "Water Tanker", quantity: 1, unit: "Nos." },
+    { id: 15, description: "Mixer Machine", quantity: 4, unit: "Nos." },
+    { id: 16, description: "Vibrator Machine", quantity: 5, unit: "Nos." },
+    {
+        id: 17,
+        description: "Steel Plates & Scaffolding",
+        quantity: 2000,
+        unit: "Sq.Mtrs.",
+    },
+    { id: 18, description: "Theodolite", quantity: 2, unit: "Nos." },
+    { id: 19, description: "Levelling Instrument", quantity: 3, unit: "Nos." },
+    { id: 20, description: "Water Pump", quantity: 5, unit: "Nos." },
+    {
+        id: 21,
+        description: "Diesel Welding Generator",
+        quantity: 2,
+        unit: "Nos.",
+    },
+    {
+        id: 22,
+        description: "Welding Machine (Electrical)",
+        quantity: 7,
+        unit: "Nos.",
+    },
+    { id: 23, description: "Cutting Torch Set", quantity: 5, unit: "Nos." },
 ];
 
 export default function EquipmentTable() {
-  return (
-    <div className="bg-gray-100 p-4 sm:p-6">
-      <div
-        className="
-          max-w-6xl mx-auto bg-white rounded-lg
-          shadow-sm hover:shadow-xl
-          transition-all duration-300 ease-in-out
-          hover:-translate-y-1
-        "
-        style={{
-          fontFamily: '"Roboto", sans-serif',
-          fontWeight: "500",
-        }}
-      >
-        {/* Header */}
-        <div className="p-4 border-b">
-          <h2 className="text-lg sm:text-xl font-semibold text-gray-800 text-center">
-            Construction Equipment Details
-          </h2>
+    return (
+        <div className="relative overflow-hidden p-4 sm:p-6">
+            {/* Background Image Layer */}
+            <div
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style={{
+                    backgroundImage:
+                        "url('/backgrounds/infra_background.jpeg')",
+                }}
+            />
+
+            {/* Dark Overlay (controls opacity properly) */}
+            <div className="absolute inset-0 bg-black/40" />
+
+            {/* Content Layer */}
+            <div className="relative z-10 max-w-3xl opacity-85 overflow-y-auto mx-auto bg-white rounded-lg shadow-lg ">
+                {/* Header */}
+                <div className="p-4 border-b">
+                    <h2 className="text-lg sm:text-xl font-semibold text-gray-800 text-center">
+                        Construction Equipment Details
+                    </h2>
+                </div>
+
+                {/* Table */}
+                <div className="overflow-x-auto">
+                    <table className="min-w-full border-collapse">
+                        <thead className="bg-gray-800 text-white">
+                            <tr>
+                                <th className="px-4 py-3 text-center text-sm font-bold">
+                                    Sl. No.
+                                </th>
+                                <th className="px-4 py-3 text-center text-sm font-bold">
+                                    Equipment Description
+                                </th>
+                                <th className="px-4 py-3 text-center text-sm font-bold">
+                                    Quantity
+                                </th>
+                                <th className="px-4 py-3 text-center text-sm font-bold">
+                                    Unit
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody className="divide-y divide-gray-200 text-sm bg-white">
+                            {equipmentList.map((item) => (
+                                <tr
+                                    key={item.id}
+                                    className="hover:bg-gray-50 transition-all duration-200"
+                                >
+                                    <td className="px-4 py-3 text-center font-semibold">
+                                        {item.id}
+                                    </td>
+                                    <td className="px-4 py-3 min-w-[300px] font-semibold">
+                                        {item.description}
+                                    </td>
+                                    <td className="px-4 py-3 text-center font-semibold">
+                                        {item.quantity}
+                                    </td>
+                                    <td className="px-4 py-3 text-center font-semibold">
+                                        {item.unit}
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-
-        {/* Table */}
-        <div className="overflow-x-auto">
-          <table className="min-w-full border-collapse">
-            <thead className="bg-gray-800 text-white">
-              <tr>
-                <th className="px-4 py-3 text-center text-sm font-bold">
-                  Sl. No.
-                </th>
-                <th className="px-4 py-3 text-center text-sm font-bold">
-                  Equipment Description
-                </th>
-                <th className="px-4 py-3 text-center text-sm font-bold">
-                  Quantity
-                </th>
-              </tr>
-            </thead>
-
-            <tbody className="divide-y divide-gray-200 text-sm">
-              {equipmentData.map((item) => (
-                <tr
-                  key={item.slNo}
-                  className="
-                    hover:bg-gray-50
-                    transition-all duration-200
-                    hover:shadow-sm
-                    cursor-default
-                  "
-                >
-                  <td className="px-4 py-3 whitespace-nowrap text-center font-semibold">
-                    {item.slNo}
-                  </td>
-
-                  <td className="px-4 py-3 min-w-[300px] font-semibold">
-                    {item.description}
-                  </td>
-
-                  <td className="px-4 py-3 whitespace-nowrap text-center font-semibold">
-                    {item.quantity}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  );
+    );
 }
-

@@ -442,7 +442,7 @@ export default function ConstructionProjectsTable() {
         <div className=" p-4 sm:p-6">
             <div
                 className="
-                  max-w-7xl mx-auto bg-white rounded-lg
+                  max-w-2xl max-h-[600px] overflow-y-auto mx-auto bg-white rounded-lg
                   shadow-sm hover:shadow-xl
                   transition-all duration-300 ease-in-out
                   hover:-translate-y-1

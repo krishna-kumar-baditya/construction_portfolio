@@ -144,8 +144,23 @@ export default function ProjectsPage() {
                 </section>
 
                 {/* Projects Grid */}
-                <section className="py-24">
-                    <ConstructionProjectsTable />
+                <section className="relative py-24 h-screen overflow-hidden">
+                    {/* Background Image */}
+                    <div
+                        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                        style={{
+                            backgroundImage:
+                                "url('/backgrounds/project_background.jpeg')",
+                        }}
+                    />
+
+                    {/* Overlay for opacity control */}
+                    <div className="absolute inset-0 bg-black/60" />
+
+                    {/* Content Layer */}
+                    <div className="relative z-10">
+                        <ConstructionProjectsTable />
+                    </div>
                 </section>
             </main>
         </div>

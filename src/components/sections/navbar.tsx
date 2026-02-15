@@ -45,7 +45,7 @@ const NAV_LINKS = [
             },
             {
                 label: "JR AGNTECH",
-                href: "/companies/shc",
+                href: "/companies/jrag",
             }
         ],
     },

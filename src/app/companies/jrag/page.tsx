@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, History } from "lucide-react";
+import { Target, Users, Leaf, History } from "lucide-react";
 
 export default function AboutPage() {
     return (
@@ -16,10 +16,8 @@ export default function AboutPage() {
                             animate={{ opacity: 1, y: 0 }}
                             className="text-5xl md:text-7xl font-black text-white mb-6"
                         >
-                            Sunrise Movers{" "}
-                            <span className="text-[#F2913F] ml-2">
-                                & Logistics
-                            </span>
+                            JR{" "}
+                            <span className="text-[#F2913F] ml-2">AGNTECH</span>
                         </motion.h1>
                     </div>
                     <div className="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
@@ -43,52 +41,17 @@ export default function AboutPage() {
                                     </h2>
                                 </div>
                                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                    Our logistics division handles approximately
-                                    2 lacs MT of bulk raw materials every month,
-                                    such as iron ore, manganese ore, and coal
-                                    for all the major factories in the Durgapur
-                                    belt. Our proven track record has made us a
-                                    trusted partner in the industry serving them
-                                    from various railway sidings and ports
-                                    through our inhouse fleet of all necessary
-                                    machinery, equipments and tippers. We have a
-                                    BPCL petrol pump and are authorized dealers
-                                    of BPCL MAK Lubricants and BKT, Appolo & JK
-                                    Tyres.{" "}
+                                    Our facility is spread across 4 acres,
+                                    having a cold storage shed area of 75000
+                                    sqft in Aligarh, Uttar Pradesh. It provides
+                                    cost-effective butter storage facilities
+                                    under -20 ºC of more than 6500 MT for major
+                                    clients like Mother Dairy and Bhole Baba
+                                    Dairy. We are in the process of setting up a
+                                    pea processing plant in the same unit and
+                                    further plan to set up a paneer processing
+                                    unit in future.{" "}
                                 </p>
-                                <a
-                                    href="https://sunrisemovers.in/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="
-                                      relative inline-flex items-center justify-center
-                                      px-8 py-3
-                                      text-sm font-semibold tracking-wide
-                                      border-2 border-[#F2913F]
-                                      text-[#F2913F]
-                                      rounded-full
-                                      overflow-hidden
-                                      transition-all duration-300 ease-in-out
-                                      hover:text-white
-                                      group
-                                    "
-                                >
-                                    <span className="relative z-10 mr-2">
-                                        Visit Our Website
-                                    </span>
-                                        <ExternalLink/>
-
-                                    {/* Sliding Background */}
-                                    <span
-                                        className="
-                                          absolute inset-0
-                                          bg-[#F2913F]
-                                          translate-y-full
-                                          group-hover:translate-y-0
-                                          transition-transform duration-300 ease-in-out
-                                        "
-                                    />
-                                </a>
                             </motion.div>
                             <div className="relative">
                                 <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
