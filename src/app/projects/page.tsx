@@ -122,9 +122,9 @@ export default function ProjectsPage() {
 
     return (
         <div className="flex flex-col min-h-screen">
-            <main className="flex-grow pt-[103px]">
+            <main className="flex-grow ">
                 {/* Hero */}
-                <section className="bg-black py-24">
+                <section className="bg-black py-38">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
                         <div className="text-center md:text-left">
                             <motion.h1

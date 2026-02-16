@@ -52,9 +52,9 @@ const serviceDetails = [
 export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <main className="flex-grow pt-[103px]">
+      <main className="flex-grow">
         {/* Hero */}
-          <section className="bg-black py-24">
+          <section className="bg-black py-38">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}

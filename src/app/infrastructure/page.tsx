@@ -7,9 +7,9 @@ import EquipmentTable from "@/components/infrastructure/EquipmentTable";
 export default function InfrastructurePage() {
     return (
         <div className="flex flex-col min-h-screen">
-            <main className="flex-grow pt-[103px]">
+            <main className="flex-grow ">
                 {/* Hero Section */}
-                <section className="relative py-24 bg-black overflow-hidden">
+                <section className="relative py-38 bg-black overflow-hidden">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                         <motion.h1
                             initial={{ opacity: 0, y: 20 }}

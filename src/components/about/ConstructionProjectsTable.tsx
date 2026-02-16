@@ -420,7 +420,7 @@ export const worksData = [
             "Land Development, Construction of Compound Wall & Workshop at Asansol",
         orderValue: 17500000,
         client: "S.T ASSOCIATES",
-    }
+    },
 ];
 
 const ROWS_PER_PAGE = 10;
@@ -433,7 +433,7 @@ export default function ConstructionProjectsTable() {
     const startIndex = (currentPage - 1) * ROWS_PER_PAGE;
     const currentRows = worksData.slice(startIndex, startIndex + ROWS_PER_PAGE);
 
-    const formatCurrency = (value:any) => {
+    const formatCurrency = (value: any) => {
         if (!value) return "—";
         return ` ${value.toLocaleString("en-IN")}`;
     };
@@ -460,9 +460,10 @@ export default function ConstructionProjectsTable() {
                 </div>
 
                 {/* Table */}
-                <div className="overflow-x-auto">
+                <div className="max-h-[450px] overflow-y-auto">
                     <table className="min-w-full border-collapse">
-                        <thead className="bg-gray-800 text-white">
+                        {/* Sticky Header */}
+                        <thead className="bg-gray-800 text-white sticky top-0 z-10">
                             <tr>
                                 <th className="px-4 py-3 text-center text-sm font-medium">
                                     Sl. No.
@@ -479,16 +480,11 @@ export default function ConstructionProjectsTable() {
                             </tr>
                         </thead>
 
-                        <tbody className="divide-y divide-gray-200 text-sm">
+                        <tbody className="divide-y divide-gray-200 text-sm bg-white">
                             {currentRows.map((row) => (
                                 <tr
                                     key={row.slNo}
-                                    className="
-                                      hover:bg-gray-50
-                                      transition-all duration-200
-                                      hover:shadow-sm
-                                      cursor-default
-                                    "
+                                    className="hover:bg-gray-50 transition-all duration-200"
                                 >
                                     <td className="px-4 py-3 whitespace-nowrap">
                                         {row.slNo}

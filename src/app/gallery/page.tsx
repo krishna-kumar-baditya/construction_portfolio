@@ -28,9 +28,9 @@ export default function Gallery() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <main className="flex-grow pt-[103px]">
+      <main className="flex-grow">
         {/* Hero */}
-        <section className="bg-black py-24 text-center">
+        <section className="bg-black py-38 text-center">
           <div className="max-w-7xl mx-auto px-4">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
