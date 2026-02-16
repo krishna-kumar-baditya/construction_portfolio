@@ -117,7 +117,7 @@ export default function EquipmentTable() {
                                     <td className="px-4 py-3 text-center font-semibold">
                                         {item.id}
                                     </td>
-                                    <td className="px-4 py-3 min-w-[300px] font-semibold">
+                                    <td className="px-4 py-3 min-w-75 font-semibold">
                                         {item.description}
                                     </td>
                                     <td className="px-4 py-3 text-center font-semibold">

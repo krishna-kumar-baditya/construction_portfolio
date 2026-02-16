@@ -8,10 +8,11 @@ type Category = "projects" | "team activities" ;
 
 const galleryData: Record<Category, { id: number; src: string }[]> = {
   projects: [
-    { id: 1, src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb" },
-    { id: 2, src: "https://images.unsplash.com/photo-1492724441997-5dc865305da7" },
-    { id: 3, src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470" },
-    { id: 4, src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c" },
+    { id: 1, src: "/gallery/p1.jpeg" },
+    { id: 2, src: "/gallery/p2.jpeg" },
+    { id: 3, src: "/gallery/p3.jpeg" },
+    { id: 4, src: "/gallery/p4.jpeg" },
+    { id: 5, src: "/gallery/p5.jpeg" },
   ],
   "team activities": [
     { id: 5, src: "/gallery/1.jpeg" },
@@ -28,7 +29,7 @@ export default function Gallery() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <main className="flex-grow">
+      <main className="grow">
         {/* Hero */}
         <section className="bg-black py-38 text-center">
           <div className="max-w-7xl mx-auto px-4">

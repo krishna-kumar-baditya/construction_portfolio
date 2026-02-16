@@ -442,7 +442,7 @@ export default function ConstructionProjectsTable() {
         <div className=" p-4 sm:p-6">
             <div
                 className="
-                  max-w-2xl max-h-[600px] overflow-y-auto mx-auto bg-white rounded-lg
+                  max-w-2xl max-h-150 overflow-y-auto mx-auto bg-white rounded-lg
                   shadow-sm hover:shadow-xl
                   transition-all duration-300 ease-in-out
                   hover:-translate-y-1
@@ -460,7 +460,7 @@ export default function ConstructionProjectsTable() {
                 </div>
 
                 {/* Table */}
-                <div className="max-h-[450px] overflow-y-auto">
+                <div className="max-h-112.5 overflow-y-auto">
                     <table className="min-w-full border-collapse">
                         {/* Sticky Header */}
                         <thead className="bg-gray-800 text-white sticky top-0 z-10">

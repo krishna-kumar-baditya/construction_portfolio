@@ -151,7 +151,7 @@ export default function Navbar() {
                                                 : "opacity-0 invisible -translate-y-2"
                                         }`}
                                     >
-                                        <div className="bg-white shadow-xl rounded-md overflow-hidden min-w-[220px] border border-gray-100 py-2">
+                                        <div className="bg-white shadow-xl rounded-md overflow-hidden min-w-55 border border-gray-100 py-2">
                                             {link.dropdown.map((subItem) => (
                                                 <a
                                                     key={subItem.label}
@@ -199,7 +199,7 @@ export default function Navbar() {
 
             {/* Mobile Menu Overlay */}
             <div
-                className={`lg:hidden fixed inset-0 z-[10000] bg-white transition-all duration-500 ease-in-out ${
+                className={`lg:hidden fixed inset-0 z-10000 bg-white transition-all duration-500 ease-in-out ${
                     mobileMenuOpen
                         ? "translate-x-0 opacity-100"
                         : "translate-x-full opacity-0"

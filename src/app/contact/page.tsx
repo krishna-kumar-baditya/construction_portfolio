@@ -47,7 +47,7 @@ export default function ContactPage() {
 
     return (
         <div className="flex flex-col min-h-screen">
-            <main className="flex-grow ">
+            <main className="grow ">
                 {/* Hero */}
                 <section className="bg-black py-38">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -128,7 +128,7 @@ export default function ContactPage() {
                                 </div>
 
                                 {/* Map */}
-                                <div className="mt-16 rounded-[40px] overflow-hidden shadow-2xl h-[400px] border border-gray-100">
+                                <div className="mt-16 rounded-[40px] overflow-hidden shadow-2xl h-100 border border-gray-100">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.654876!2d87.3123456!3d23.5432109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f771234567890!2sDurgapur%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1234567890"
                                         width="100%"
