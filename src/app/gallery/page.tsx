@@ -13,6 +13,10 @@ const galleryData: Record<Category, { id: number; src: string }[]> = {
     { id: 3, src: "/gallery/p3.jpeg" },
     { id: 4, src: "/gallery/p4.jpeg" },
     { id: 5, src: "/gallery/p5.jpeg" },
+    { id: 6, src: "/gallery/p6.jpeg" },
+    { id: 7, src: "/gallery/p7.jpeg" },
+    { id: 8, src: "/gallery/p8.jpeg" },
+    { id: 9, src: "/gallery/p9.jpeg" },
   ],
   "team activities": [
     { id: 5, src: "/gallery/1.jpeg" },

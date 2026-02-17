@@ -66,8 +66,8 @@ const equipmentList = [
 
 export default function EquipmentTable() {
     return (
-        <div className="relative overflow-hidden p-4 sm:p-6">
-            {/* Background Image Layer */}
+        <section className="relative py-16 px-4 sm:px-6">
+            {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
@@ -76,54 +76,105 @@ export default function EquipmentTable() {
                 }}
             />
 
-            {/* Dark Overlay (controls opacity properly) */}
-            <div className="absolute inset-0 bg-black/40" />
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 bg-black/50" />
 
-            {/* Content Layer */}
-            <div className="relative z-10 max-w-3xl opacity-85 overflow-y-auto mx-auto bg-white rounded-lg shadow-lg ">
+            {/* Content */}
+            <div className="relative z-10 max-w-6xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden">
+
                 {/* Header */}
-                <div className="p-4 border-b">
-                    <h2 className="text-lg sm:text-xl font-semibold text-gray-800 text-center">
+                <div className="p-6 border-b text-center">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1B3A]">
                         Construction Equipment Details
                     </h2>
                 </div>
 
-                {/* Table */}
-                <div className="overflow-x-auto">
+                {/* ========================= */}
+                {/* MOBILE VIEW (Cards) */}
+                {/* ========================= */}
+                <div className="block md:hidden divide-y">
+                    {equipmentList.map((item) => (
+                        <div key={item.id} className="p-5 space-y-3">
+                            <div className="flex justify-between text-sm text-gray-500">
+                                <span>Sl. No.</span>
+                                <span className="font-semibold text-gray-800">
+                                    {item.id}
+                                </span>
+                            </div>
+
+                            <div>
+                                <p className="text-sm text-gray-500">
+                                    Equipment
+                                </p>
+                                <p className="font-semibold text-gray-800">
+                                    {item.description}
+                                </p>
+                            </div>
+
+                            <div className="flex justify-between">
+                                <div>
+                                    <p className="text-sm text-gray-500">
+                                        Quantity
+                                    </p>
+                                    <p className="font-semibold text-gray-800">
+                                        {item.quantity}
+                                    </p>
+                                </div>
+
+                                <div className="text-right">
+                                    <p className="text-sm text-gray-500">
+                                        Unit
+                                    </p>
+                                    <p className="font-semibold text-gray-800">
+                                        {item.unit}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* ========================= */}
+                {/* TABLE VIEW (Tablet & Desktop) */}
+                {/* ========================= */}
+                <div className="hidden md:block overflow-x-auto">
                     <table className="min-w-full border-collapse">
-                        <thead className="bg-gray-800 text-white">
+                        <thead className="bg-[#0B1B3A] text-white">
                             <tr>
-                                <th className="px-4 py-3 text-center text-sm font-bold">
+                                <th className="px-6 py-4 text-left text-sm font-semibold">
                                     Sl. No.
                                 </th>
-                                <th className="px-4 py-3 text-center text-sm font-bold">
+                                <th className="px-6 py-4 text-left text-sm font-semibold">
                                     Equipment Description
                                 </th>
-                                <th className="px-4 py-3 text-center text-sm font-bold">
+                                <th className="px-6 py-4 text-center text-sm font-semibold">
                                     Quantity
                                 </th>
-                                <th className="px-4 py-3 text-center text-sm font-bold">
+                                <th className="px-6 py-4 text-center text-sm font-semibold">
                                     Unit
                                 </th>
                             </tr>
                         </thead>
 
-                        <tbody className="divide-y divide-gray-200 text-sm bg-white">
+                        <tbody className="divide-y text-sm bg-white">
                             {equipmentList.map((item) => (
                                 <tr
                                     key={item.id}
-                                    className="hover:bg-gray-50 transition-all duration-200"
+                                    className="hover:bg-gray-50 transition"
                                 >
-                                    <td className="px-4 py-3 text-center font-semibold">
+                                    <td className="px-6 py-4 font-medium">
                                         {item.id}
                                     </td>
-                                    <td className="px-4 py-3 min-w-75 font-semibold">
+
+                                    <td className="px-6 py-4">
                                         {item.description}
                                     </td>
-                                    <td className="px-4 py-3 text-center font-semibold">
+
+                                    <td className="px-6 py-4 text-center font-semibold">
                                         {item.quantity}
                                     </td>
-                                    <td className="px-4 py-3 text-center font-semibold">
+
+                                    <td className="px-6 py-4 text-center">
                                         {item.unit}
                                     </td>
                                 </tr>
@@ -132,6 +183,7 @@ export default function EquipmentTable() {
                     </table>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
+

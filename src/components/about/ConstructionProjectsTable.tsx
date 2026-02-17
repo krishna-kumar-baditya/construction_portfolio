@@ -429,68 +429,103 @@ export default function ConstructionProjectsTable() {
     const [currentPage, setCurrentPage] = useState(1);
 
     const totalPages = Math.ceil(worksData.length / ROWS_PER_PAGE);
-
     const startIndex = (currentPage - 1) * ROWS_PER_PAGE;
     const currentRows = worksData.slice(startIndex, startIndex + ROWS_PER_PAGE);
 
-    const formatCurrency = (value: any) => {
+    const formatCurrency = (value: number) => {
         if (!value) return "—";
-        return ` ${value.toLocaleString("en-IN")}`;
+        return `₹ ${value.toLocaleString("en-IN")}`;
     };
 
     return (
-        <div className=" p-4 sm:p-6">
-            <div
-                className="
-                  max-w-2xl max-h-150 overflow-y-auto mx-auto bg-white rounded-lg
-                  shadow-sm hover:shadow-xl
-                  transition-all duration-300 ease-in-out
-                  hover:-translate-y-1
-                "
-                style={{
-                    fontFamily: '"Roboto", sans-serif',
-                    fontWeight: "500",
-                }}
-            >
+        <div className="px-4 sm:px-6 lg:px-8 py-6">
+            <div className="max-w-7xl mx-auto bg-white rounded-xl shadow-md">
+
                 {/* Header */}
-                <div className="p-4 border-b">
-                    <h2 className="text-lg sm:text-xl font-semibold text-gray-800 text-center">
+                <div className="p-5 border-b">
+                    <h2 className="text-xl md:text-2xl font-semibold text-gray-800 text-center">
                         Construction Project Orders
                     </h2>
                 </div>
 
-                {/* Table */}
-                <div className="max-h-112.5 overflow-y-auto">
+                {/* ========================= */}
+                {/* MOBILE CARD VIEW */}
+                {/* ========================= */}
+                <div className="block md:hidden divide-y">
+                    {currentRows.map((row) => (
+                        <div key={row.slNo} className="p-4 space-y-2">
+                            <div className="flex justify-between text-sm text-gray-500">
+                                <span>Sl. No.</span>
+                                <span className="font-medium text-gray-800">
+                                    {row.slNo}
+                                </span>
+                            </div>
+
+                            <div>
+                                <p className="text-sm text-gray-500">
+                                    Description
+                                </p>
+                                <p className="text-gray-800 font-medium">
+                                    {row.description}
+                                </p>
+                            </div>
+
+                            <div className="flex justify-between">
+                                <div>
+                                    <p className="text-sm text-gray-500">
+                                        Order Value
+                                    </p>
+                                    <p className="font-semibold text-gray-800">
+                                        {formatCurrency(row.orderValue)}
+                                    </p>
+                                </div>
+
+                                <div className="text-right">
+                                    <p className="text-sm text-gray-500">
+                                        Client
+                                    </p>
+                                    <p className="font-medium text-gray-800">
+                                        {row.client || "—"}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* ========================= */}
+                {/* TABLE VIEW (Tablet & Up) */}
+                {/* ========================= */}
+                <div className="hidden md:block overflow-x-auto">
                     <table className="min-w-full border-collapse">
-                        {/* Sticky Header */}
-                        <thead className="bg-gray-800 text-white sticky top-0 z-10">
+                        <thead className="bg-gray-800 text-white">
                             <tr>
-                                <th className="px-4 py-3 text-center text-sm font-medium">
+                                <th className="px-4 py-3 text-left text-sm font-medium">
                                     Sl. No.
                                 </th>
-                                <th className="px-4 py-3 text-center text-sm font-medium">
+                                <th className="px-4 py-3 text-left text-sm font-medium">
                                     Description of Works
                                 </th>
-                                <th className="px-4 py-3 text-center text-sm font-medium">
+                                <th className="px-4 py-3 text-right text-sm font-medium">
                                     Order Value ₹
                                 </th>
-                                <th className="px-4 py-3 text-center text-sm font-medium">
+                                <th className="px-4 py-3 text-left text-sm font-medium">
                                     Client
                                 </th>
                             </tr>
                         </thead>
 
-                        <tbody className="divide-y divide-gray-200 text-sm bg-white">
+                        <tbody className="divide-y text-sm">
                             {currentRows.map((row) => (
                                 <tr
                                     key={row.slNo}
-                                    className="hover:bg-gray-50 transition-all duration-200"
+                                    className="hover:bg-gray-50 transition"
                                 >
                                     <td className="px-4 py-3 whitespace-nowrap">
                                         {row.slNo}
                                     </td>
 
-                                    <td className="px-4 py-3 min-w-[320px]">
+                                    <td className="px-4 py-3">
                                         {row.description}
                                     </td>
 
@@ -508,7 +543,7 @@ export default function ConstructionProjectsTable() {
                 </div>
 
                 {/* Pagination */}
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-3 p-4 border-t">
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 border-t">
                     <span className="text-sm text-gray-600">
                         Page {currentPage} of {totalPages}
                     </span>
@@ -519,7 +554,7 @@ export default function ConstructionProjectsTable() {
                                 setCurrentPage((p) => Math.max(p - 1, 1))
                             }
                             disabled={currentPage === 1}
-                            className="px-4 py-2 text-sm rounded bg-gray-200 hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="px-4 py-2 text-sm rounded-md bg-gray-200 hover:bg-gray-300 disabled:opacity-50"
                         >
                             Previous
                         </button>
@@ -527,11 +562,11 @@ export default function ConstructionProjectsTable() {
                         <button
                             onClick={() =>
                                 setCurrentPage((p) =>
-                                    Math.min(p + 1, totalPages),
+                                    Math.min(p + 1, totalPages)
                                 )
                             }
                             disabled={currentPage === totalPages}
-                            className="px-4 py-2 text-sm rounded bg-gray-800 text-white hover:bg-gray-900 disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="px-4 py-2 text-sm rounded-md bg-gray-800 text-white hover:bg-gray-900 disabled:opacity-50"
                         >
                             Next
                         </button>

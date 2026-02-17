@@ -125,8 +125,8 @@ export default function ProjectsPage() {
             <main className="grow ">
                 {/* Hero */}
                 <section className="bg-black py-38">
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
-                        <div className="text-center md:text-left">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center gap-8 ">
+                        <div className="text-center ">
                             <motion.h1
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -144,7 +144,7 @@ export default function ProjectsPage() {
                 </section>
 
                 {/* Projects Grid */}
-                <section className="relative py-24 h-screen overflow-hidden">
+                <section className="relative py-24 min-h-screen overflow-hidden ">
                     {/* Background Image */}
                     <div
                         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

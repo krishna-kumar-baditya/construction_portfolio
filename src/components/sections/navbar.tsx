@@ -168,15 +168,6 @@ export default function Navbar() {
                         ))}
                     </div>
 
-                    {/* CTA Button */}
-                    <div className="hidden lg:block">
-                        <a
-                            href="/contact"
-                            className="bg-[#F2913F] text-white px-6 py-2.5 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-[#d87d2f] transition-all duration-300 shadow-md hover:shadow-lg"
-                        >
-                            Request a Quote
-                        </a>
-                    </div>
 
                     {/* Mobile Menu Toggle */}
                     <div className="lg:hidden">
