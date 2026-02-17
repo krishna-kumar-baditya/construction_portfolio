@@ -560,29 +560,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            {/* Contact Block */}
-            <div className="relative md:absolute md:left-0 md:bottom-0 md:w-1/2 bg-[#0B1B3A] text-white p-6 sm:p-10 mt-6 md:mt-0">
-              <div>
-                <h3 className="text-xs text-white tracking-widest mb-2 mt-2">ADDRESS</h3>
-                <p className="text-gray-300 text-sm sm:text-base">
-                  15, G.T. Road, Asansol – 713303, West Bengal
-                </p>
-              </div>
 
-              <div>
-                <h3 className="text-xs text-white tracking-widest mb-2 mt-2">TELEPHONE</h3>
-                <p className="text-gray-300 text-sm sm:text-base">
-                  +91 98000 19399
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xs text-white tracking-widest mb-2 mt-2">EMAIL</h3>
-                <p className="text-gray-300 text-sm sm:text-base">
-                  info@evergreengroup.in
-                </p>
-              </div>
-            </div>
 
           </div>
         </section>
