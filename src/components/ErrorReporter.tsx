@@ -11,13 +11,14 @@ type ReporterProps = {
 export default function ErrorReporter({ error, reset }: ReporterProps) {
   /* ─ instrumentation shared by every route ─ */
   const lastOverlayMsg = useRef("");
-  const pollRef = useRef<NodeJS.Timeout>();
+  const pollRef = useRef<NodeJS.Timeout | null>(null);
+  const parentOrigin = process.env.NEXT_PUBLIC_ORCHIDS_TARGET_ORIGIN;
 
   useEffect(() => {
     const inIframe = window.parent !== window;
-    if (!inIframe) return;
+    if (!inIframe || !parentOrigin) return;
 
-    const send = (payload: unknown) => window.parent.postMessage(payload, "*");
+    const send = (payload: unknown) => window.parent.postMessage(payload, parentOrigin);
 
     const onError = (e: ErrorEvent) =>
       send({
@@ -70,11 +71,11 @@ export default function ErrorReporter({ error, reset }: ReporterProps) {
       window.removeEventListener("unhandledrejection", onReject);
       pollRef.current && clearInterval(pollRef.current);
     };
-  }, []);
+  }, [parentOrigin]);
 
   /* ─ extra postMessage when on the global-error route ─ */
   useEffect(() => {
-    if (!error) return;
+    if (!error || !parentOrigin || window.parent === window) return;
     window.parent.postMessage(
       {
         type: "global-error-reset",
@@ -87,9 +88,9 @@ export default function ErrorReporter({ error, reset }: ReporterProps) {
         timestamp: Date.now(),
         userAgent: navigator.userAgent,
       },
-      "*"
+      parentOrigin
     );
-  }, [error]);
+  }, [error, parentOrigin]);
 
   /* ─ ordinary pages render nothing ─ */
   if (!error) return null;

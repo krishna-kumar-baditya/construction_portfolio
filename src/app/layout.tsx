@@ -17,6 +17,9 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const orchidsEnabled = process.env.NEXT_PUBLIC_ENABLE_ORCHIDS === "true";
+    const orchidsTargetOrigin = process.env.NEXT_PUBLIC_ORCHIDS_TARGET_ORIGIN;
+
     return (
         <html lang="en">
             <head>
@@ -37,24 +40,28 @@ export default function RootLayout({
                 <Footer />
                 <FloatingQuoteButton />
 
-                <VisualEditsMessenger />
-                <Script
-                    id="orchids-browser-logs"
-                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts/orchids-browser-logs.js"
-                    strategy="afterInteractive"
-                    data-orchids-project-id="5f5702b0-00ea-450f-84bb-61992efa636a"
-                />
-                <ErrorReporter />
-                <Script
-                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts//route-messenger.js"
-                    strategy="afterInteractive"
-                    data-target-origin="*"
-                    data-message-type="ROUTE_CHANGE"
-                    data-include-search-params="true"
-                    data-only-in-iframe="true"
-                    data-debug="true"
-                    data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
-                />
+                {orchidsEnabled && orchidsTargetOrigin && (
+                    <>
+                        <VisualEditsMessenger />
+                        <Script
+                            id="orchids-browser-logs"
+                            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts/orchids-browser-logs.js"
+                            strategy="afterInteractive"
+                            data-orchids-project-id="5f5702b0-00ea-450f-84bb-61992efa636a"
+                        />
+                        <ErrorReporter />
+                        <Script
+                            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts//route-messenger.js"
+                            strategy="afterInteractive"
+                            data-target-origin={orchidsTargetOrigin}
+                            data-message-type="ROUTE_CHANGE"
+                            data-include-search-params="true"
+                            data-only-in-iframe="true"
+                            data-debug="false"
+                            data-custom-data='{"appName":"Evergreen","version":"1.0.0"}'
+                        />
+                    </>
+                )}
             </body>
         </html>
     );

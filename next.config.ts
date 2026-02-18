@@ -40,22 +40,28 @@ import path from "node:path";
 const LOADER = path.resolve(__dirname, "src/visual-edits/component-tagger-loader.js");
 
 const nextConfig: NextConfig = {
+  poweredByHeader: false,
   images: {
     remotePatterns: [
-      { protocol: "https", hostname: "**" },
-      { protocol: "http", hostname: "**" },
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-        pathname: '/**',
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
       },
     ],
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+        ],
+      },
+    ];
   },
   turbopack: {
     rules: {
