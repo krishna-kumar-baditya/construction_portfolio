@@ -25,13 +25,12 @@ const clients = [
   { id: 13, name: "Shyam Steel", logo: "/clients/shyam-steel.jpeg" },
   { id: 14, name: "Shyam Ferro Alloys Ltd", logo: "/clients/shyamferro.jpeg" },
   { id: 15, name: "Surya Alloy Durgapur", logo: "/clients/suryaalloy.jpeg" },
-  { id: 16, name: "Venkatesh", logo: "/clients/venkatesh.jpeg" },
-  { id: 17, name: "Venkateshwara Engineering Works", logo: "/clients/Venkateshwara.jpeg" },
-  { id: 18, name: "THE WEST BENGAL POWER DEVELOPMENT CORPORATION LIMITED", logo: "/clients/wbpdcl.jpeg" },
-  { id: 19, name: "OM BESCO RAIL PRODUCTS LTD", logo: "/clients/ombesco.jpeg" },
-  { id: 20, name: "Maithon Power Limited", logo: "/clients/maithon.jpeg" },
-  { id: 21, name: "RAMKY INFRASTRUCTURE", logo: "/clients/ramk.jpeg" },
-  { id: 22, name: "ORISSA STEEL & POWER LTD", logo: "/clients/orissa.jpeg" },
+  { id: 16, name: "Venkateshwara Engineering Works", logo: "/clients/Venkateshwara.jpeg" },
+  { id: 17, name: "THE WEST BENGAL POWER DEVELOPMENT CORPORATION LIMITED", logo: "/clients/wbpdcl.jpeg" },
+  { id: 18, name: "OM BESCO RAIL PRODUCTS LTD", logo: "/clients/ombesco.jpeg" },
+  { id: 19, name: "Maithon Power Limited", logo: "/clients/maithon.jpeg" },
+  { id: 20, name: "RAMKY INFRASTRUCTURE", logo: "/clients/ramk.jpeg" },
+  { id: 21, name: "ORISSA STEEL & POWER LTD", logo: "/clients/orissa.jpeg" },
 ];
 
 export default function ClientSlides() {
@@ -51,10 +50,11 @@ export default function ClientSlides() {
         640: { slidesPerView: 2 },
         1024: { slidesPerView: 4 },
       }}
+      className=" w-full"
     >
       {clients.map((client) => (
         <SwiperSlide key={client.id}>
-          <div className="flex flex-col items-center justify-center p-4  transition">
+          <div className="flex flex-col items-center justify-center p-4 w-70 transition">
             <img
               src={client.logo}
               alt={client.name}

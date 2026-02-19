@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import React, { useState, useEffect } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
@@ -22,31 +23,40 @@ const NAV_LINKS = [
             {
                 label: "EVERGREEN CONSTRUCTION DURGAPUR PVT. LTD.",
                 href: "/companies/ecpl",
+                logo: "/logos/ecpl.jpeg",
             },
             {
                 label: "EVERGREEN MANAGEMENT CONSULTANTS LLP",
                 href: "/companies/emcl",
+                logo: "/logos/emcl.jpeg",
             },
             {
                 label: "EVERGREEN MOVERS PVT. LTD.",
                 href: "/companies/empl",
             },
             {
-                label: "Sunrise Movers & Logistics",
-                href: "/companies/sunrise",
+                label: "Evergreen Minerals Pvt. ltd.",
+                href: "/companies/minerals",
+                logo: "/logos/Evergreen_minerals.jpeg",
             },
             {
-                label: "V.R Minerals",
+                label: "Sunrise Movers & Logistics",
+                href: "/companies/sunrise",
+                logo: "/logos/sunrise.jpeg",
+            },
+            {
+                label: "V.R. Minerals",
                 href: "/companies/vrm",
             },
             {
-                label: "Sky High Concrete",
+                label: "SSky High Pioneer Concrete LLP",
                 href: "/companies/shc",
+                logo: "/logos/sky_high.jpeg",
             },
             {
                 label: "JR AGRITECH",
                 href: "/companies/jrag",
-            }
+            },
         ],
     },
     { label: "Infrastructure", href: "/infrastructure" },
@@ -151,14 +161,34 @@ export default function Navbar() {
                                                 : "opacity-0 invisible -translate-y-2"
                                         }`}
                                     >
-                                        <div className="bg-white shadow-xl rounded-md overflow-hidden min-w-55 border border-gray-100 py-2">
+                                        <div className="bg-white shadow-xl rounded-xl overflow-hidden min-w-[320px] border border-gray-100 py-2">
                                             {link.dropdown.map((subItem) => (
                                                 <a
                                                     key={subItem.label}
                                                     href={subItem.href}
-                                                    className="block px-6 py-2.5 text-sm font-medium text-gray-700 hover:text-[#F2913F] hover:bg-gray-50 transition-all duration-200 uppercase"
+                                                    className="group flex items-center gap-4 px-6 py-3 text-sm font-semibold text-gray-700 hover:text-[#F2913F] hover:bg-gray-50 transition-all duration-200 uppercase"
                                                 >
-                                                    {subItem.label}
+                                                    {/* Logo (only if exists) */}
+                                                    {subItem.logo && (
+                                                        <div className="w-18 h-10 flex-shrink-0 bg-white rounded-lg border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
+                                                            <Image
+                                                                src={
+                                                                    subItem.logo
+                                                                }
+                                                                alt={
+                                                                    subItem.label
+                                                                }
+                                                                width={100}
+                                                                height={100}
+                                                                className="object-contain"
+                                                            />
+                                                        </div>
+                                                    )}
+
+                                                    {/* Label */}
+                                                    <span className="leading-tight">
+                                                        {subItem.label}
+                                                    </span>
                                                 </a>
                                             ))}
                                         </div>
@@ -167,7 +197,6 @@ export default function Navbar() {
                             </div>
                         ))}
                     </div>
-
 
                     {/* Mobile Menu Toggle */}
                     <div className="lg:hidden">

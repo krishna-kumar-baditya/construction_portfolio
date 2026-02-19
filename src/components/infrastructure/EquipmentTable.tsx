@@ -1,3 +1,15 @@
+import { useState } from "react";
+import Image from "next/image";
+
+const infrastructureImages = [
+    "/infrastructure/infra1.jpeg",
+    "/infrastructure/infra2.jpeg",
+    "/infrastructure/infra3.jpeg",
+    "/infrastructure/infra4.jpeg",
+    "/infrastructure/infra5.jpeg",
+    "/infrastructure/infra6.jpeg",
+];
+
 const equipmentList = [
     { id: 1, description: "Excavator 300", quantity: 2, unit: "Nos." },
     { id: 2, description: "Excavator 200", quantity: 8, unit: "Nos." },
@@ -65,125 +77,115 @@ const equipmentList = [
 ];
 
 export default function EquipmentTable() {
+    const [activeSection, setActiveSection] = useState("table");
+    // "table" | "image" | null
+
+    const toggleSection = (section: any) => {
+        setActiveSection((prev) => (prev === section ? null : section));
+    };
+
     return (
-        <section className="relative py-16 px-4 sm:px-6">
-            {/* Background Image */}
-            {/* <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{
-                    backgroundImage:
-                        "url('/backgrounds/infra_back.jpg')",
-                }}
-            /> */}
-
-            {/* Dark Overlay */}
-            {/* <div className="absolute inset-0 bg-black/50" /> */}
-
-            {/* Content */}
-            <div className="relative z-10 max-w-2xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden ">
-
-                {/* Header */}
-                <div className="p-6 border-b text-center">
-                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1B3A]">
+        <section className="py-16 px-4 sm:px-6 bg-gray-50">
+            <div className="max-w-4xl mx-auto space-y-6">
+                {/* ================= TABLE TOGGLE ================= */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button
+                        onClick={() => toggleSection("table")}
+                        className="w-full text-left px-6 py-4 bg-[#0B1B3A] text-white font-semibold text-2xl flex justify-between items-center cursor-pointer"
+                    >
                         Construction Equipment List
-                    </h2>
+                        <span>{activeSection === "table" ? "−" : "+"}</span>
+                    </button>
+
+                    <div
+                        className={`transition-all duration-500 overflow-hidden ${
+                            activeSection === "table"
+                                ? "max-h-[2000px] opacity-100"
+                                : "max-h-0 opacity-0"
+                        }`}
+                    >
+                        <div className="overflow-x-auto">
+                            <table className="min-w-full border-collapse">
+                                <thead className="bg-gray-100 text-gray-800">
+                                    <tr>
+                                        <th className="px-4 py-3 text-left text-sm font-semibold">
+                                            Sl. No.
+                                        </th>
+                                        <th className="px-4 py-3 text-left text-sm font-semibold">
+                                            Equipment Description
+                                        </th>
+                                        <th className="px-4 py-3 text-center text-sm font-semibold">
+                                            Quantity
+                                        </th>
+                                        <th className="px-4 py-3 text-center text-sm font-semibold">
+                                            Unit
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody className="divide-y text-sm bg-white">
+                                    {equipmentList.map((item) => (
+                                        <tr
+                                            key={item.id}
+                                            className="hover:bg-gray-50 transition"
+                                        >
+                                            <td className="px-6 py-4">
+                                                {item.id}
+                                            </td>
+                                            <td className="px-6 py-4">
+                                                {item.description}
+                                            </td>
+                                            <td className="px-6 py-4 text-center font-semibold">
+                                                {item.quantity}
+                                            </td>
+                                            <td className="px-6 py-4 text-center">
+                                                {item.unit}
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
 
-                {/* ========================= */}
-                {/* MOBILE VIEW (Cards) */}
-                {/* ========================= */}
-                <div className="block md:hidden divide-y">
-                    {equipmentList.map((item) => (
-                        <div key={item.id} className="p-5 space-y-3">
-                            <div className="flex justify-between text-sm text-gray-500">
-                                <span>Sl. No.</span>
-                                <span className="font-semibold text-gray-800">
-                                    {item.id}
-                                </span>
-                            </div>
+                {/* ================= IMAGE TOGGLE ================= */}
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button
+                        onClick={() => toggleSection("image")}
+                        className="w-full text-left px-6 py-4 bg-[#F2913F] text-white font-semibold text-2xl flex justify-between items-center cursor-pointer"
+                    >
+                        Equipment Gallery
+                        <span>{activeSection === "image" ? "−" : "+"}</span>
+                    </button>
 
-                            <div>
-                                <p className="text-sm text-gray-500">
-                                    Equipment
-                                </p>
-                                <p className="font-semibold text-gray-800">
-                                    {item.description}
-                                </p>
-                            </div>
-
-                            <div className="flex justify-between">
-                                <div>
-                                    <p className="text-sm text-gray-500">
-                                        Quantity
-                                    </p>
-                                    <p className="font-semibold text-gray-800">
-                                        {item.quantity}
-                                    </p>
-                                </div>
-
-                                <div className="text-right">
-                                    <p className="text-sm text-gray-500">
-                                        Unit
-                                    </p>
-                                    <p className="font-semibold text-gray-800">
-                                        {item.unit}
-                                    </p>
-                                </div>
+                    <div
+                        className={`transition-all duration-500 overflow-hidden ${
+                            activeSection === "image"
+                                ? "max-h-[1200px] opacity-100"
+                                : "max-h-0 opacity-0"
+                        }`}
+                    >
+                        <div className="p-6">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                                {infrastructureImages.map((src, index) => (
+                                    <div
+                                        key={index}
+                                        className="relative w-full h-56 rounded-xl overflow-hidden shadow-md group"
+                                    >
+                                        <Image
+                                            src={src}
+                                            alt={`Infrastructure ${index + 1}`}
+                                            fill
+                                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                        />
+                                    </div>
+                                ))}
                             </div>
                         </div>
-                    ))}
-                </div>
-
-                {/* ========================= */}
-                {/* TABLE VIEW (Tablet & Desktop) */}
-                {/* ========================= */}
-                <div className="hidden md:block overflow-x-auto ">
-                    <table className="min-w-full border-collapse">
-                        <thead className="bg-[#0B1B3A] text-white">
-                            <tr>
-                                <th className="px-4 py-3 text-left text-sm font-semibold">
-                                    Sl. No.
-                                </th>
-                                <th className="px-4 py-3 text-left text-sm font-semibold">
-                                    Equipment Description
-                                </th>
-                                <th className="px-4 py-3 text-center text-sm font-semibold">
-                                    Quantity
-                                </th>
-                                <th className="px-4 py-3 text-center text-sm font-semibold">
-                                    Unit
-                                </th>
-                            </tr>
-                        </thead>
-
-                        <tbody className="divide-y text-sm bg-white">
-                            {equipmentList.map((item) => (
-                                <tr
-                                    key={item.id}
-                                    className="hover:bg-gray-50 transition"
-                                >
-                                    <td className="px-6 py-4 font-medium">
-                                        {item.id}
-                                    </td>
-
-                                    <td className="px-6 py-4">
-                                        {item.description}
-                                    </td>
-
-                                    <td className="px-6 py-4 text-center font-semibold">
-                                        {item.quantity}
-                                    </td>
-
-                                    <td className="px-6 py-4 text-center">
-                                        {item.unit}
-                                    </td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
+                    </div>
                 </div>
             </div>
         </section>
     );
 }
-

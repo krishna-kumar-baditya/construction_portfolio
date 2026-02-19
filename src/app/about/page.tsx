@@ -576,21 +576,11 @@ export default function AboutPage() {
                 {/* ✅ Leadership Section (Left Content – Right Image) */}
                 <section className="py-20 bg-gray-50">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2 className="text-3xl text-center sm:text-4xl font-bold text-[#0B1B3A] mb-6">
+                            From The Founders Desk
+                        </h2>
                         {/* Director Section */}
                         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-                            {/* LEFT CONTENT */}
-                            <div>
-                                <h2 className="text-3xl sm:text-4xl font-bold text-[#0B1B3A] mb-6">
-                                    Director
-                                </h2>
-
-                                <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-                                    Our Director provides visionary leadership,
-                                    guiding the organization with strategic
-                                    insight, integrity, and a steadfast
-                                    commitment to excellence.
-                                </p>
-                            </div>
 
                             {/* RIGHT IMAGE */}
                             <div className="flex justify-center lg:justify-end">
@@ -602,10 +592,6 @@ export default function AboutPage() {
                                     />
                                 </div>
                             </div>
-                        </div>
-
-                        {/* Chairman Section */}
-                        <div className="grid lg:grid-cols-2 gap-12 items-center">
                             {/* RIGHT IMAGE */}
                             <div className="">
                                 <div className="relative group">
@@ -616,25 +602,12 @@ export default function AboutPage() {
                                     />
                                 </div>
                             </div>
-                            {/* LEFT CONTENT */}
-                            <div>
-                                <h2 className="text-3xl sm:text-4xl font-bold text-[#0B1B3A] mb-6">
-                                    Chairman
-                                </h2>
-
-                                <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-                                    Our Chairman offers distinguished oversight
-                                    and governance, ensuring strong stewardship,
-                                    sustainable growth, and unwavering
-                                    dedication to our mission.
-                                </p>
-                            </div>
                         </div>
+
                     </div>
                 </section>
 
                 {/* ================= THANK YOU SECTION ================= */}
-
             </main>
         </div>
     );

@@ -34,13 +34,7 @@ export default function AboutPage() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <div className="flex items-center gap-4 mb-6 text-[#F2913F]">
-                                    <History size={32} />
-                                    <h2 className="text-2xl font-bold uppercase tracking-widest">
-                                        Our History
-                                    </h2>
-                                </div>
-                                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                                <p className="text-lg text-gray-600 mb-6 text-justify leading-relaxed">
                                     Our facility is spread across 4 acres,
                                     having a cold storage shed area of 75000
                                     sqft in Aligarh, Uttar Pradesh. It provides
@@ -56,7 +50,7 @@ export default function AboutPage() {
                             <div className="relative">
                                 <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                                     <img
-                                        src="https://images.unsplash.com/photo-1694521787162-5373b598945c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        src="/companies/jrargitech.jpeg"
                                         alt="Engineering Legacy"
                                         className="w-full h-full object-cover"
                                     />

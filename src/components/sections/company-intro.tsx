@@ -57,14 +57,14 @@ export default function CompanyIntro() {
                     >
                         <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                             <img
-                                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                src="/backgrounds/about.jpeg"
                                 alt="Infrastructure Project Team"
                                 className="w-full h-full object-cover"
                             />
                         </div>
                         <div className="absolute -bottom-10 -left-10 bg-[#F2913F] p-8 rounded-2xl shadow-xl hidden md:block">
                             <div className="text-4xl font-black text-white mb-2">
-                                50+
+                                30+
                             </div>
                             <div className="text-white font-bold uppercase tracking-wider text-sm">
                                 Years of <br /> Engineering Mastery

@@ -18,15 +18,19 @@ const companies = [
         href: "/companies/empl",
     },
     {
+        label: "EVERGREEN MINERALS PVT. LTD.",
+        href: "/companies/minerals",
+    },
+    {
         label: "Sunrise Movers & Logistics",
         href: "/companies/sunrise",
     },
     {
-        label: "V.R Minerals",
+        label: "V.R. Minerals",
         href: "/companies/vrm",
     },
     {
-        label: "Sky High Concrete",
+        label: "SSky High Pioneer Concrete LLP",
         href: "/companies/shc",
     },
     {
