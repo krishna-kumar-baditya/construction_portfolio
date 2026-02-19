@@ -18,7 +18,7 @@ export function Footer() {
                             <span
                                 className="text-lg font-bold tracking-tight"
                             >
-                                <span className="text-green-500 pr-2"
+                                <span className="text-green-500 text-2xl pr-2"
                                 
                                 >
                                     Evergreen

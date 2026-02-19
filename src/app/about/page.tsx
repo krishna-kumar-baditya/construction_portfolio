@@ -634,28 +634,7 @@ export default function AboutPage() {
                 </section>
 
                 {/* ================= THANK YOU SECTION ================= */}
-                <section className="py-16">
-                    <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-                        <div className="w-full h-80 sm:h-[500px] md:min-h-screen overflow-hidden">
-                            <img
-                                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop"
-                                alt="Corporate Building"
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
 
-                        {/* Thank You Block */}
-                        <div className="relative md:absolute md:left-0 md:top-77.5 md:w-2/3 bg-[#BFD6EA] p-6 sm:p-10 mt-6 md:mt-0">
-                            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#1D4ED8] mb-4">
-                                Thank You
-                            </h1>
-                            <p className="text-gray-800 text-sm sm:text-lg leading-relaxed">
-                                We look forward to being a reliable partner in
-                                your growth.
-                            </p>
-                        </div>
-                    </div>
-                </section>
             </main>
         </div>
     );

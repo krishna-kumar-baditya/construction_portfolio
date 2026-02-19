@@ -88,23 +88,23 @@ export const worksData = [
     {
         slNo: 13,
         description:
+            "Land development, foundations, VDF & Tremix flooring and road development",
+        orderValue: 65000000,
+        client: "JEKAY WAGONS LIMITED",
+    },
+    {
+        slNo: 14,
+        description:
             "Earthwork and railway formation for Direct Delivery Line & Goods Shed at Barachak",
         orderValue: 64534119,
         client: "EASTERN RLY",
     },
     {
-        slNo: 14,
+        slNo: 15,
         description:
             "Execution of balance civil work for workshop sheds and godowns at CLW Chittaranjan",
         orderValue: 60000000,
         client: "H.S.C. LTD.",
-    },
-    {
-        slNo: 15,
-        description:
-            "Rehabilitation and upgrading of NH-25 (Km 104 to Km 170) to 4-lane in Uttar Pradesh",
-        orderValue: 59584000,
-        client: "SUNWAY",
     },
     {
         slNo: 16,
@@ -116,23 +116,23 @@ export const worksData = [
     {
         slNo: 17,
         description:
+            "Rehabilitation and upgrading of NH-25 (Km 104 to Km 170) to 4-lane in Uttar Pradesh",
+        orderValue: 59584000,
+        client: "SUNWAY",
+    },
+    {
+        slNo: 18,
+        description:
             "Mining and Carting Works for Jaipur–Kishangarh Road Project at Jaipur",
         orderValue: 58257500,
         client: "L&T LTD.",
     },
     {
-        slNo: 18,
+        slNo: 19,
         description:
             "Construction of heavy-duty pathway and flooring at Asansol Goods Shed",
         orderValue: 56009089,
         client: "EASTERN RLY",
-    },
-    {
-        slNo: 19,
-        description:
-            "Land development, foundations, VDF & Tremix flooring and road development",
-        orderValue: 50000000,
-        client: "OM BESCO RAIL PRODUCTS LTD.",
     },
     {
         slNo: 20,
@@ -269,157 +269,157 @@ export const worksData = [
     {
         slNo: 39,
         description:
+            "Land Development, Construction of Compound Wall & Workshop at Asansol",
+        orderValue: 17500000,
+        client: "S.T ASSOCIATES",
+    },
+    {
+        slNo: 40,
+        description:
             "Construction of 20 Nos. Two Storied Buildings (Type-D) at Bakreshwar Thermal Power Project Township",
         orderValue: 17293259,
         client: "WBPDCL",
     },
     {
-        slNo: 40,
+        slNo: 41,
         description:
             "Earthwork, RCC culverts, retaining walls for BG Line between Baidyanathdham to Dumka",
         orderValue: 17185476,
         client: "EASTERN RLY",
     },
     {
-        slNo: 41,
+        slNo: 42,
         description:
             "Construction of Office Building, Staff Quarters & Boundary Wall for EPFO at Durgapur",
         orderValue: 16832605,
         client: "NBCC LTD.",
     },
     {
-        slNo: 42,
+        slNo: 43,
         description:
             "Civil and steel structural work in the MOD-II Phase of PCBL, Durgapur (Under Various packages)",
         orderValue: 15000000,
         client: "P.C.B.L",
     },
     {
-        slNo: 43,
+        slNo: 44,
         description:
             "Road Work for Jaipur–Kishangarh Expressway Project at Jaipur",
         orderValue: 15000000,
         client: "L&T LTD.",
     },
     {
-        slNo: 44,
+        slNo: 45,
         description:
             "Composite Job of Mining & Crushing of Stone Ballast at Paharpur, Purulia (Eastern Railway)",
         orderValue: 15000000,
         client: "WBMTDC",
     },
     {
-        slNo: 45,
+        slNo: 46,
         description:
             "Civil work for construction of workshop shed and godowns at Chittaranjan Locomotive Works",
         orderValue: 12734379,
         client: "CLW",
     },
     {
-        slNo: 46,
+        slNo: 47,
         description: "Paver block laying and development work (12000 sq.m)",
         orderValue: 9420000,
         client: "SHARP FERRO ALLOYS LTD.",
     },
     {
-        slNo: 47,
+        slNo: 48,
         description:
             "Civil & Development work of Vinayak Steels Ltd. at Durgapur",
         orderValue: 8000000,
         client: "V.S. LTD.",
     },
     {
-        slNo: 48,
+        slNo: 49,
         description:
             "Excavation & Transportation of Earth/Moorum of Raniganj–Barakar Road (NH2)",
         orderValue: 7500000,
         client: "L&T",
     },
     {
-        slNo: 49,
+        slNo: 50,
         description: "Fabrication & Erection Work",
         orderValue: 7500000,
         client: "SHYAM FERRO ALLOYS LTD.",
     },
     {
-        slNo: 50,
+        slNo: 51,
         description:
             "Construction of new 100-bed Hostel, Engineering Drawing Hall & Laboratory Block at NPTI, Durgapur",
         orderValue: 7354354,
         client: "NBCC LTD.",
     },
     {
-        slNo: 51,
+        slNo: 52,
         description:
             "Civil & Structural work for Purvanchal Sponge Iron Ltd. at Mahukunda",
         orderValue: 6500000,
         client: "P.S.I LTD.",
     },
     {
-        slNo: 52,
+        slNo: 53,
         description: "Earthwork at ROB-II of Raniganj–Barakar Road (NH2)",
         orderValue: 6000000,
         client: "L&T",
     },
     {
-        slNo: 53,
+        slNo: 54,
         description: "Fabrication & Erection Work",
         orderValue: 5500000,
         client: "SURYA ALLOY INDUSTRIES LTD.",
     },
     {
-        slNo: 54,
+        slNo: 55,
         description:
             "Construction of RCC Elevated Reservoir at Jodupur (Sherpur), Malda Arsenic Area W/S Scheme",
         orderValue: 5190056,
         client: "MWSC",
     },
     {
-        slNo: 55,
+        slNo: 56,
         description: "Civil and Structural works for Expansion of P.I Shed",
         orderValue: 4000000,
         client: "G.I.L",
     },
     {
-        slNo: 56,
+        slNo: 57,
         description: "Interior Decoration Work for Computer Building",
         orderValue: 3223000,
         client: "D.S.P",
     },
     {
-        slNo: 57,
+        slNo: 58,
         description:
             "Construction of RCC Overhead Reservoir of 5 Lakhs litres capacity (INTZE type) at BKTPP Township, Bakreshwar",
         orderValue: 2790936,
         client: "WBPDCL",
     },
     {
-        slNo: 58,
+        slNo: 59,
         description:
             "Earthwork in cutting and compaction within Durgapur 400/200 KV Sub-Station area",
         orderValue: 1738816,
         client: "WBSEB",
     },
     {
-        slNo: 59,
+        slNo: 60,
         description:
             "Providing Wardrobe and Pelmet at IOC Durgapur, Housing Complex",
         orderValue: 998000,
         client: "I.O.C",
     },
     {
-        slNo: 60,
+        slNo: 61,
         description:
             "Design & Construction of a R.C.C Overhead Tank of 1 Lakh Litre capacity with 20 mtr. Staging complete",
         orderValue: 660000,
         client: "N.B.C.C",
-    },
-    {
-        slNo: 61,
-        description:
-            "Land Development, Construction of Compound Wall & Workshop at Asansol",
-        orderValue: 17500000,
-        client: "S.T ASSOCIATES",
     },
 ];
 
@@ -440,7 +440,6 @@ export default function ConstructionProjectsTable() {
     return (
         <div className="px-4 sm:px-6 lg:px-8 py-6">
             <div className="max-w-7xl mx-auto bg-white rounded-xl shadow-md">
-
                 {/* Header */}
                 <div className="p-5 border-b">
                     <h2 className="text-xl md:text-2xl font-semibold text-gray-800 text-center">
@@ -562,7 +561,7 @@ export default function ConstructionProjectsTable() {
                         <button
                             onClick={() =>
                                 setCurrentPage((p) =>
-                                    Math.min(p + 1, totalPages)
+                                    Math.min(p + 1, totalPages),
                                 )
                             }
                             disabled={currentPage === totalPages}

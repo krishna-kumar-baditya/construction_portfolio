@@ -17,7 +17,7 @@ export default function AboutPage() {
                             className="text-5xl md:text-7xl font-black text-white mb-6"
                         >
                             JR{" "}
-                            <span className="text-[#F2913F] ml-2">AGNTECH</span>
+                            <span className="text-[#F2913F] ml-2">AGRITECH</span>
                         </motion.h1>
                     </div>
                     <div className="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">

@@ -16,12 +16,12 @@ export default function InfrastructurePage() {
                             animate={{ opacity: 1, y: 0 }}
                             className="text-5xl md:text-7xl font-black text-white mb-6"
                         >
-                            INFRA{" "}
-                            <span className="text-[#F2913F]">STRUCTURE</span>
+                            Equipment{" "}
+                            <span className="text-[#F2913F]">& Machinery</span>
                         </motion.h1>
                         <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-                            Engineering Infrastructure That Drives Sustainable
-                            Growth.{" "}
+                            Comprehensive equipment and technical infrastructure
+                            built for operational excellence.{" "}
                         </p>
                     </div>
                     <div className="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">

@@ -20,16 +20,12 @@ const NAV_LINKS = [
         href: "/companies",
         dropdown: [
             {
-                label: "EVERGREEN MANAGEMENT CONSULTANTS LLP",
-                href: "/companies/emcl",
-            },
-            {
                 label: "EVERGREEN CONSTRUCTION DURGAPUR PVT. LTD.",
                 href: "/companies/ecpl",
             },
             {
-                label: "V.R Minerals",
-                href: "/companies/vrm",
+                label: "EVERGREEN MANAGEMENT CONSULTANTS LLP",
+                href: "/companies/emcl",
             },
             {
                 label: "EVERGREEN MOVERS PVT. LTD.",
@@ -40,11 +36,15 @@ const NAV_LINKS = [
                 href: "/companies/sunrise",
             },
             {
+                label: "V.R Minerals",
+                href: "/companies/vrm",
+            },
+            {
                 label: "Sky High Concrete",
                 href: "/companies/shc",
             },
             {
-                label: "JR AGNTECH",
+                label: "JR AGRITECH",
                 href: "/companies/jrag",
             }
         ],

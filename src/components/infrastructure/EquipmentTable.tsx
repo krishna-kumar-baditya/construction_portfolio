@@ -68,24 +68,24 @@ export default function EquipmentTable() {
     return (
         <section className="relative py-16 px-4 sm:px-6">
             {/* Background Image */}
-            <div
+            {/* <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
                     backgroundImage:
-                        "url('/backgrounds/infra_background.jpeg')",
+                        "url('/backgrounds/infra_back.jpg')",
                 }}
-            />
+            /> */}
 
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/50" />
+            {/* <div className="absolute inset-0 bg-black/50" /> */}
 
             {/* Content */}
-            <div className="relative z-10 max-w-6xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden">
+            <div className="relative z-10 max-w-2xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden ">
 
                 {/* Header */}
                 <div className="p-6 border-b text-center">
                     <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1B3A]">
-                        Construction Equipment Details
+                        Construction Equipment List
                     </h2>
                 </div>
 
@@ -137,20 +137,20 @@ export default function EquipmentTable() {
                 {/* ========================= */}
                 {/* TABLE VIEW (Tablet & Desktop) */}
                 {/* ========================= */}
-                <div className="hidden md:block overflow-x-auto">
+                <div className="hidden md:block overflow-x-auto ">
                     <table className="min-w-full border-collapse">
                         <thead className="bg-[#0B1B3A] text-white">
                             <tr>
-                                <th className="px-6 py-4 text-left text-sm font-semibold">
+                                <th className="px-4 py-3 text-left text-sm font-semibold">
                                     Sl. No.
                                 </th>
-                                <th className="px-6 py-4 text-left text-sm font-semibold">
+                                <th className="px-4 py-3 text-left text-sm font-semibold">
                                     Equipment Description
                                 </th>
-                                <th className="px-6 py-4 text-center text-sm font-semibold">
+                                <th className="px-4 py-3 text-center text-sm font-semibold">
                                     Quantity
                                 </th>
-                                <th className="px-6 py-4 text-center text-sm font-semibold">
+                                <th className="px-4 py-3 text-center text-sm font-semibold">
                                     Unit
                                 </th>
                             </tr>
