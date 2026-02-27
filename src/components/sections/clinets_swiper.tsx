@@ -27,7 +27,7 @@ const clients = [
   { id: 15, name: "Surya Alloy Durgapur", logo: "/clients/suryaalloy.jpeg" },
   { id: 16, name: "Venkateshwara Engineering Works", logo: "/clients/Venkateshwara.jpeg" },
   { id: 17, name: "THE WEST BENGAL POWER DEVELOPMENT CORPORATION LIMITED", logo: "/clients/wbpdcl.jpeg" },
-  { id: 18, name: "OM BESCO RAIL PRODUCTS LTD", logo: "/clients/ombesco.jpeg" },
+  { id: 18, name: "Jekay wagono international", logo: "/clients/jk.png" },
   { id: 19, name: "Maithon Power Limited", logo: "/clients/maithon.jpeg" },
   { id: 20, name: "RAMKY INFRASTRUCTURE", logo: "/clients/ramk.jpeg" },
   { id: 21, name: "ORISSA STEEL & POWER LTD", logo: "/clients/orissa.jpeg" },

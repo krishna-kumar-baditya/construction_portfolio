@@ -50,18 +50,6 @@ export default function AboutPage() {
                                     preferred partner for most of the industries
                                     in this belt.{" "}
                                 </p>
-                                <p className="text-lg text-gray-600 leading-relaxed">
-                                    With more than three decades of experience,
-                                    we have become a trusted name in the iron
-                                    and steel industry, managing end to end
-                                    operations of nine manufacturing (ferro
-                                    alloys & foundries) units in West Bengal and
-                                    Jharkhand. We manage a workforce base of
-                                    more than 4500 skilled, semi skilled and
-                                    unskilled workers, processing more than
-                                    22000 MT of ferro alloys and 4000 MT of
-                                    foundry metal per month.{" "}
-                                </p>
                             </motion.div>
                             <div className="relative">
                                 <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">

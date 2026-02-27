@@ -434,7 +434,6 @@ export default function AboutPage() {
                         <div className="w-full h-full bg-linear-to-l from-[#F2913F] to-transparent" />
                     </div>
                 </section>
-
                 {/* ================= ABOUT SECTION ================= */}
                 <section className="py-16">
                     <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -481,27 +480,81 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </section>
+                {/* ================= OUR SERVICES SECTION ================= */}
+                <section className="py-16 bg-[#F3F4F6]">
+                    <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                        {/* Heading */}
+                        <div className="text-center mb-14">
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B1B3A] mb-4">
+                                Our Services
+                            </h2>
 
-                {/* ================= HERO IMAGE SECTION ================= */}
-                <section className="py-16">
-                    <div className="relative">
-                        <div className="w-full h-80 sm:h-[500px] md:h-[650px] overflow-hidden">
-                            <img
-                                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop"
-                                alt="Corporate Building"
-                                className="w-full h-full object-cover"
-                            />
+                            <p className="text-gray-700 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
+                                The trusted service provider for all your
+                                industrial needs
+                            </p>
+
+                            <div className="w-20 h-1 bg-[#F2913F] mx-auto mt-6 rounded-full" />
                         </div>
 
-                        {/* Overlay Title */}
-                        <div className="absolute left-4 sm:left-10 md:left-20 top-1/2 -translate-y-1/2 bg-[#0B1B3A] px-6 sm:px-10 py-6 sm:py-10 max-w-xs sm:max-w-md md:max-w-2xl">
-                            <h1 className="text-white text-2xl sm:text-4xl md:text-6xl font-extrabold leading-tight">
-                                Evergreen <br /> Group of Companies
-                            </h1>
+                        {/* Services Grid */}
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                            {[
+                                "Civil & Mechanical Construction",
+                                "Foundry & Ferro Production Contracts",
+                                "Rake Handling & Raw Material Transportation",
+                                "Fuel, Lubricants, Tyres & Minerals Supply",
+                                "Ready Mix Concrete",
+                                "Coal Mining & Transport",
+                            ].map((service, index) => (
+                                <div
+                                    key={index}
+                                    className="
+            group
+            bg-white
+            border border-gray-200
+            rounded-xl
+            p-6 sm:p-8
+            shadow-sm
+            hover:shadow-xl
+            hover:-translate-y-1
+            transition-all duration-300
+            relative
+            overflow-hidden
+          "
+                                >
+                                    {/* Left Accent Line */}
+                                    <div className="absolute left-0 top-0 h-full w-1 bg-[#0B1B3A] group-hover:bg-[#F2913F] transition-colors duration-300" />
+
+                                    <div className="flex items-start gap-4">
+                                        {/* Number Badge */}
+                                        <div className="flex-shrink-0 mt-1">
+                                            <div
+                                                className="
+                w-8 h-8 
+                rounded-full 
+                bg-[#0B1B3A] 
+                group-hover:bg-[#F2913F]
+                transition-colors duration-300
+                flex items-center justify-center
+              "
+                                            >
+                                                <span className="text-white text-sm font-semibold">
+                                                    {index + 1}
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        {/* Service Text */}
+                                        <h3 className="text-gray-800 text-sm sm:text-base font-semibold leading-relaxed">
+                                            {service}
+                                        </h3>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
-                </section>
-
+                </section>{" "}
                 {/* ================= WHY CHOOSE US ================= */}
                 <section className="py-16">
                     <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -581,7 +634,6 @@ export default function AboutPage() {
                         </h2>
                         {/* Director Section */}
                         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-
                             {/* RIGHT IMAGE */}
                             <div className="flex justify-center lg:justify-end">
                                 <div className="relative group">
@@ -603,10 +655,8 @@ export default function AboutPage() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </section>
-
                 {/* ================= THANK YOU SECTION ================= */}
             </main>
         </div>

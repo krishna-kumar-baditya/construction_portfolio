@@ -37,19 +37,6 @@ export default function AboutPage() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                    Our construction services started back in
-                                    1970’s and include land layout, designing
-                                    and complete civil construction. We
-                                    specialise in industrial and commercial
-                                    construction and believe in delivering
-                                    superior quality in a time bound manner
-                                    through our in house complete solution of
-                                    machinery, manpower and equipments. This has
-                                    helped us in becoming a leading name and
-                                    preferred partner for most of the industries
-                                    in this belt.{" "}
-                                </p>
                                 <p className="text-lg text-gray-600 leading-relaxed">
                                     With more than three decades of experience,
                                     we have become a trusted name in the iron
@@ -77,7 +64,6 @@ export default function AboutPage() {
                 </section>
 
                 {/* Mission & Vision */}
-
             </main>
         </div>
     );

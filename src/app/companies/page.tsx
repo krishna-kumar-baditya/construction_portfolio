@@ -13,10 +13,10 @@ const companies = [
         label: "EVERGREEN MANAGEMENT CONSULTANTS LLP",
         href: "/companies/emcl",
     },
-    {
-        label: "EVERGREEN MOVERS PVT. LTD.",
-        href: "/companies/empl",
-    },
+    // {
+    //     label: "EVERGREEN MOVERS PVT. LTD.",
+    //     href: "/companies/empl",
+    // },
     {
         label: "EVERGREEN MINERALS PVT. LTD.",
         href: "/companies/minerals",

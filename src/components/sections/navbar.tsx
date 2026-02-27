@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import React, { useState, useEffect } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
+import Link from "next/link";
 
 const NAV_LINKS = [
     { label: "Home", href: "/" },
@@ -30,10 +31,10 @@ const NAV_LINKS = [
                 href: "/companies/emcl",
                 logo: "/logos/emcl.jpeg",
             },
-            {
-                label: "EVERGREEN MOVERS PVT. LTD.",
-                href: "/companies/empl",
-            },
+            // {
+            //     label: "EVERGREEN MOVERS PVT. LTD.",
+            //     href: "/companies/empl",
+            // },
             {
                 label: "Evergreen Minerals Pvt. ltd.",
                 href: "/companies/minerals",
@@ -42,7 +43,7 @@ const NAV_LINKS = [
             {
                 label: "Sunrise Movers & Logistics",
                 href: "/companies/sunrise",
-                logo: "/logos/sunrise.jpeg",
+                logo: "/logos/sunrise.png",
             },
             {
                 label: "V.R. Minerals",
@@ -89,7 +90,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <div className="`shrink-0`">
-                        <a href="/" className="flex items-center gap-3">
+                        <Link href="/" className="flex items-center gap-3">
                             <div className="flex flex-col">
                                 <span
                                     className={`text-base md:text-lg lg:text-xl font-semibold tracking-tight leading-none transition-colors duration-300 text-green-500 pr-2 
@@ -116,7 +117,7 @@ export default function Navbar() {
                                     Group Of Companies
                                 </span>
                             </div>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Desktop Navigation - Centered */}
@@ -170,7 +171,7 @@ export default function Navbar() {
                                                 >
                                                     {/* Logo (only if exists) */}
                                                     {subItem.logo && (
-                                                        <div className="w-18 h-10 flex-shrink-0 bg-white rounded-lg border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
+                                                        <div className="w-18 h-10 shrink-0 bg-white rounded-lg border border-gray-100 shadow-sm flex items-center justify-center overflow-hidden">
                                                             <Image
                                                                 src={
                                                                     subItem.logo
@@ -179,7 +180,7 @@ export default function Navbar() {
                                                                     subItem.label
                                                                 }
                                                                 width={100}
-                                                                height={100}
+                                                                height={150}
                                                                 className="object-contain"
                                                             />
                                                         </div>
