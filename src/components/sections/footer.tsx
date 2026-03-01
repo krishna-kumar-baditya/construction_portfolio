@@ -80,7 +80,6 @@ export function Footer() {
                                 { label: "About Us", href: "/about" },
                                 { label: "Group  Companies", href: "/companies" },
                                 { label: "Projects", href: "/projects" },
-                                { label: "Infrastructure", href: "/infrastructure" },
                                 { label: "Gallery", href: "/gallery" },
                                 { label: "Contact", href: "/contact" },
                             ].map((link) => (

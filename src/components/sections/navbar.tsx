@@ -14,7 +14,6 @@ const NAV_LINKS = [
             { label: "Company History", href: "/about#history" },
             { label: "Mission & Vision", href: "/about#mission" },
             { label: "Leadership", href: "/about#leadership" },
-            { label: "Sustainability", href: "/about#sustainability" },
         ],
     },
     {
@@ -31,6 +30,17 @@ const NAV_LINKS = [
                 href: "/companies/emcl",
                 logo: "/logos/emcl.jpeg",
             },
+                        {
+                label: "Sunrise Movers & Logistics",
+                href: "/companies/sunrise",
+                logo: "/logos/sunrise.jpeg",
+            },
+                        {
+                label: "V.R. Minerals",
+                href: "/companies/vrm",
+            },
+
+
             // {
             //     label: "EVERGREEN MOVERS PVT. LTD.",
             //     href: "/companies/empl",
@@ -39,15 +49,6 @@ const NAV_LINKS = [
                 label: "Evergreen Minerals Pvt. ltd.",
                 href: "/companies/minerals",
                 logo: "/logos/Evergreen_minerals.jpeg",
-            },
-            {
-                label: "Sunrise Movers & Logistics",
-                href: "/companies/sunrise",
-                logo: "/logos/sunrise.png",
-            },
-            {
-                label: "V.R. Minerals",
-                href: "/companies/vrm",
             },
             {
                 label: "SSky High Pioneer Concrete LLP",
@@ -60,7 +61,7 @@ const NAV_LINKS = [
             },
         ],
     },
-    { label: "Infrastructure", href: "/infrastructure" },
+    // { label: "Infrastructure", href: "/infrastructure" },
 
     { label: "Projects", href: "/projects" },
     { label: "Gallery", href: "/gallery" },
@@ -180,8 +181,8 @@ export default function Navbar() {
                                                                     subItem.label
                                                                 }
                                                                 width={100}
-                                                                height={150}
-                                                                className="object-contain"
+                                                                height={100}
+                                                                // className="object-cover"
                                                             />
                                                         </div>
                                                     )}

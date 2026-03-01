@@ -13,14 +13,6 @@ const companies = [
         label: "EVERGREEN MANAGEMENT CONSULTANTS LLP",
         href: "/companies/emcl",
     },
-    // {
-    //     label: "EVERGREEN MOVERS PVT. LTD.",
-    //     href: "/companies/empl",
-    // },
-    {
-        label: "EVERGREEN MINERALS PVT. LTD.",
-        href: "/companies/minerals",
-    },
     {
         label: "Sunrise Movers & Logistics",
         href: "/companies/sunrise",
@@ -28,6 +20,14 @@ const companies = [
     {
         label: "V.R. Minerals",
         href: "/companies/vrm",
+    },
+    // {
+    //     label: "EVERGREEN MOVERS PVT. LTD.",
+    //     href: "/companies/empl",
+    // },
+    {
+        label: "EVERGREEN MINERALS PVT. LTD.",
+        href: "/companies/minerals",
     },
     {
         label: "SSky High Pioneer Concrete LLP",

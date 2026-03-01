@@ -49,7 +49,7 @@ export default function AboutPage() {
                             <div className="relative">
                                 <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                                     <img
-                                        src="/companies/minerals.jpeg"
+                                        src="/companies/evgminerals.jpeg"
                                         alt="Engineering Legacy"
                                         className="w-full h-full object-cover"
                                     />

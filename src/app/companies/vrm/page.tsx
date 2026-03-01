@@ -37,7 +37,7 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                             >
                                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                    Our minerals division deals in Samd, Silica
+                                    Our minerals division deals in Sand, Silica
                                     Sand, Quartz and Stone chips. We have
                                     several mines in West Bengal and Jharkhand
                                     and also have set up a dedicated Sand

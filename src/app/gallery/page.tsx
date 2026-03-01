@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-type Category = "projects" | "team activities";
+type Category = "projects" | "equipments";
 
 const galleryData: Record<
     Category,
@@ -40,7 +40,7 @@ const galleryData: Record<
         { id: 19, src: "/gallery/p19.jpeg", name: "" },
         { id: 28, src: "/gallery/p28.jpeg", name: "" },
     ],
-    "team activities": [
+    "equipments": [
         // { id: 5, src: "/gallery/1.jpeg" },
         { id: 6, src: "/gallery/2.jpeg" },
         { id: 7, src: "/gallery/3.jpeg" },
@@ -79,7 +79,7 @@ export default function Gallery() {
                         {/* Tab Buttons */}
                         <div className="flex justify-center gap-6 mb-10">
                             {(
-                                ["projects", "team activities"] as Category[]
+                                ["projects", "equipments"] as Category[]
                             ).map((tab) => (
                                 <button
                                     key={tab}

@@ -37,17 +37,18 @@ export default function AboutPage() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <p className="text-lg text-gray-600 leading-relaxed">
-                                    With more than three decades of experience,
-                                    we have become a trusted name in the iron
-                                    and steel industry, managing end to end
-                                    operations of nine manufacturing (ferro
-                                    alloys & foundries) units in West Bengal and
-                                    Jharkhand. We manage a workforce base of
-                                    more than 4500 skilled, semi skilled and
-                                    unskilled workers, processing more than
-                                    22000 MT of ferro alloys and 4000 MT of
-                                    foundry metal per month.{" "}
+                                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                                    Our construction services started back in
+                                    1970’s and include land layout, designing
+                                    and complete civil construction. We
+                                    specialise in industrial and commercial
+                                    construction and believe in delivering
+                                    superior quality in a time bound manner
+                                    through our in house complete solution of
+                                    machinery, manpower and equipments. This has
+                                    helped us in becoming a leading name and
+                                    preferred partner for most of the industries
+                                    in this belt.{" "}
                                 </p>
                             </motion.div>
                             <div className="relative">

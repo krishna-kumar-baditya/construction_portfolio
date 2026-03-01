@@ -446,25 +446,20 @@ export default function AboutPage() {
 
                                 <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
                                     The Evergreen Group embarked upon its
-                                    journey from Durgapur, 64 years ago and
-                                    started the business with the name Evergreen
-                                    Timber Traders. There are four verticals in
-                                    our Group which is being headed by the
-                                    founders
+                                    journey 64 years ago from Durgapur. Founded
+                                    by
                                     <strong className="ml-2">
-                                        Shri H. D. Bhattad & Shri G.D. Bhattad
+                                        Shri H.D. Bhattad & G.D. Bhattad
                                     </strong>
-                                    , both of whom are still active even as the
-                                    third generation is now fully in business.
-                                </p>
-
-                                <p className="text-gray-700 leading-relaxed text-base sm:text-lg mt-4">
-                                    Headquartered in Durgapur, the main
-                                    locations of operation of these activities
-                                    are in Bengal (Durgapur, Kolkata, Asansol,
-                                    Kharagpur, Bankura, Purulia and Panagarh)
-                                    and Jharkhand (Hazaribagh, Bokaro &amp;
-                                    Dhanbad) and Uttar Pradesh (Aligarh).{" "}
+                                    , we started our business with the name
+                                    Evergreen Timber Traders, supplying wooden
+                                    accessories to Durgapur Steel Plant. Today
+                                    the group has become a trusted service
+                                    partner for industrial needs and has
+                                    diversified into several divisions, mainly
+                                    comprising of civil construction, production
+                                    contracts, logistics, Ready Mix
+                                    Concrete.{" "}
                                 </p>
                             </div>
 
@@ -480,81 +475,6 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </section>
-                {/* ================= OUR SERVICES SECTION ================= */}
-                <section className="py-16 bg-[#F3F4F6]">
-                    <div className="max-w-6xl mx-auto px-4 sm:px-6">
-                        {/* Heading */}
-                        <div className="text-center mb-14">
-                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B1B3A] mb-4">
-                                Our Services
-                            </h2>
-
-                            <p className="text-gray-700 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
-                                The trusted service provider for all your
-                                industrial needs
-                            </p>
-
-                            <div className="w-20 h-1 bg-[#F2913F] mx-auto mt-6 rounded-full" />
-                        </div>
-
-                        {/* Services Grid */}
-                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                            {[
-                                "Civil & Mechanical Construction",
-                                "Foundry & Ferro Production Contracts",
-                                "Rake Handling & Raw Material Transportation",
-                                "Fuel, Lubricants, Tyres & Minerals Supply",
-                                "Ready Mix Concrete",
-                                "Coal Mining & Transport",
-                            ].map((service, index) => (
-                                <div
-                                    key={index}
-                                    className="
-            group
-            bg-white
-            border border-gray-200
-            rounded-xl
-            p-6 sm:p-8
-            shadow-sm
-            hover:shadow-xl
-            hover:-translate-y-1
-            transition-all duration-300
-            relative
-            overflow-hidden
-          "
-                                >
-                                    {/* Left Accent Line */}
-                                    <div className="absolute left-0 top-0 h-full w-1 bg-[#0B1B3A] group-hover:bg-[#F2913F] transition-colors duration-300" />
-
-                                    <div className="flex items-start gap-4">
-                                        {/* Number Badge */}
-                                        <div className="flex-shrink-0 mt-1">
-                                            <div
-                                                className="
-                w-8 h-8 
-                rounded-full 
-                bg-[#0B1B3A] 
-                group-hover:bg-[#F2913F]
-                transition-colors duration-300
-                flex items-center justify-center
-              "
-                                            >
-                                                <span className="text-white text-sm font-semibold">
-                                                    {index + 1}
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                        {/* Service Text */}
-                                        <h3 className="text-gray-800 text-sm sm:text-base font-semibold leading-relaxed">
-                                            {service}
-                                        </h3>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>{" "}
                 {/* ================= WHY CHOOSE US ================= */}
                 <section className="py-16">
                     <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -627,14 +547,12 @@ export default function AboutPage() {
                     </div>
                 </section>
                 {/* ✅ Leadership Section (Left Content – Right Image) */}
-                <section className="py-20 bg-gray-50">
+                {/* <section className="py-20 bg-gray-50">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <h2 className="text-3xl text-center sm:text-4xl font-bold text-[#0B1B3A] mb-6">
                             From The Founders Desk
                         </h2>
-                        {/* Director Section */}
                         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-                            {/* RIGHT IMAGE */}
                             <div className="flex justify-center lg:justify-end">
                                 <div className="relative group">
                                     <img
@@ -644,7 +562,6 @@ export default function AboutPage() {
                                     />
                                 </div>
                             </div>
-                            {/* RIGHT IMAGE */}
                             <div className="">
                                 <div className="relative group">
                                     <img
@@ -656,8 +573,81 @@ export default function AboutPage() {
                             </div>
                         </div>
                     </div>
+                </section> */}
+                {/* ================= MISSION & VISION ================= */}
+                <section className="py-20 bg-[#F8FAFC] text-white">
+                    <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                        {/* Cards Grid */}
+                        <div className="grid md:grid-cols-2 gap-10">
+                            {/* Mission Card */}
+                            <div
+                                className="
+                                    group
+                                    bg-white text-[#0B1B3A]
+                                    rounded-2xl
+                                    p-8 sm:p-10
+                                    shadow-lg
+                                    hover:shadow-2xl
+                                    hover:-translate-y-2
+                                    transition-all duration-300
+                                    relative overflow-hidden
+                                "
+                            >
+                                {/* Top Accent */}
+                                <div className="absolute top-0 left-0 w-full h-2 bg-[#F2913F]" />
+
+                                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B1B3A] mb-6">
+                                    {" "}
+                                    Our Mission
+                                </h2>
+
+                                <p className="text-gray-600 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
+                                    {" "}
+                                    To provide quality workmanship and customer
+                                    service while maintaining the highest level
+                                    of professionalism, honesty, and fairness in
+                                    our relationships with customers, employees,
+                                    and vendors.
+                                </p>
+                            </div>
+
+                            {/* Vision Card */}
+                            <div
+                                className="
+                                    group
+                                    bg-[#F2913F]
+                                    text-black
+                                    rounded-2xl
+                                    p-8 sm:p-10
+                                    shadow-lg
+                                    hover:shadow-2xl
+                                    hover:-translate-y-2
+                                    transition-all duration-300
+                                    relative overflow-hidden
+                                "
+                            >
+                                {/* Top Accent */}
+                                <div className="absolute top-0 left-0 w-full h-2 bg-[#0B1B3A]" />
+
+                                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B1B3A] mb-6">
+                                    {" "}
+                                    Our Vision
+                                </h2>
+
+                                <p className="leading-relaxed text-base sm:text-lg font-medium">
+                                    To be the leading provider of industrial and
+                                    commercial construction services in the
+                                    region, known for our commitment to quality
+                                    and customer satisfaction. We aim to grow
+                                    continually by delivering meaningful
+                                    solutions to existing markets and expanding
+                                    into new areas aligned with our competencies
+                                    and customer needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                {/* ================= THANK YOU SECTION ================= */}
             </main>
         </div>
     );

@@ -32,11 +32,6 @@ export default function CompanyIntro() {
                             integrated industrial solutions and execute complex
                             projects across Eastern and Central India with
                             efficiency and reliability.
-                            <br />
-                            <br />
-                            <cite className="not-italic font-semibold text-gray-800 block">
-                                Founded by H.D. Bhattad &amp; G.D. Bhattad.
-                            </cite>
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <a
