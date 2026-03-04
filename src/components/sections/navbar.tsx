@@ -30,16 +30,16 @@ const NAV_LINKS = [
                 href: "/companies/emcl",
                 logo: "/logos/emcl.jpeg",
             },
-                        {
+            {
                 label: "Sunrise Movers & Logistics",
                 href: "/companies/sunrise",
                 logo: "/logos/sunrise.jpeg",
             },
-                        {
+            {
                 label: "V.R. Minerals",
                 href: "/companies/vrm",
+                logo: "/logos/V_R_MINERALS_LOGO.jpeg",
             },
-
 
             // {
             //     label: "EVERGREEN MOVERS PVT. LTD.",
@@ -58,6 +58,7 @@ const NAV_LINKS = [
             {
                 label: "JR AGRITECH",
                 href: "/companies/jrag",
+                logo: "/logos/JR_AGRITECH_LOGO.png",
             },
         ],
     },

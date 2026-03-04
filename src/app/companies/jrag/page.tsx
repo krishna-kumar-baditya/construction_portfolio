@@ -17,7 +17,9 @@ export default function AboutPage() {
                             className="text-5xl md:text-7xl font-black text-white mb-6"
                         >
                             JR{" "}
-                            <span className="text-[#F2913F] ml-2">AGRITECH</span>
+                            <span className="text-[#F2913F] ml-2">
+                                AGRITECH
+                            </span>
                         </motion.h1>
                     </div>
                     <div className="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
@@ -35,22 +37,37 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                             >
                                 <p className="text-lg text-gray-600 mb-6 text-justify leading-relaxed">
-                                    Our facility is spread across 4 acres,
-                                    having a cold storage shed area of 75000
-                                    sqft in Aligarh, Uttar Pradesh. It provides
-                                    cost-effective butter storage facilities
-                                    under -20 ºC of more than 6500 MT for major
-                                    clients like Mother Dairy and Bhole Baba
-                                    Dairy. We are in the process of setting up a
-                                    pea processing plant in the same unit and
-                                    further plan to set up a paneer processing
-                                    unit in future.{" "}
+                                    Cold Storage Facility in Aligarh, Uttar
+                                    Pradesh Our state-of-the-art cold storage
+                                    facility in Aligarh, Uttar Pradesh, is
+                                    spread across 4 acres, featuring a massive
+                                    75,000 sq. ft. temperature-controlled
+                                    storage shed. Designed for efficiency and
+                                    reliability, the facility provides
+                                    cost-effective butter storage solutions at
+                                    -20°C, with a total storage capacity
+                                    exceeding 6,500 metric tonnes (MT). We
+                                    proudly serve leading dairy brands such as
+                                    Mother Dairy and Bhole Baba Dairy, ensuring
+                                    strict temperature control, quality
+                                    preservation, and dependable logistics
+                                    support. As part of our expansion strategy,
+                                    we are currently in the process of
+                                    establishing a modern pea processing plant
+                                    within the same premises. Furthermore, we
+                                    have future plans to set up a paneer
+                                    processing unit, strengthening our footprint
+                                    in the food processing and cold chain
+                                    industry. With advanced infrastructure and
+                                    scalable capacity, we are positioned as a
+                                    reliable cold storage and food processing
+                                    partner in Uttar Pradesh.
                                 </p>
                             </motion.div>
                             <div className="relative">
-                                <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                                <div className="aspect-videow-137.5 h-112.5 rounded-2xl overflow-hidden shadow-2xl">
                                     <img
-                                        src="/companies/jrargitech.jpeg"
+                                        src="/companies/J_R_Agritech.jpeg"
                                         alt="Engineering Legacy"
                                         className="w-full h-full object-cover"
                                     />

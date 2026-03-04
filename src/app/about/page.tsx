@@ -445,28 +445,33 @@ export default function AboutPage() {
                                 </h1>
 
                                 <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
-                                    The Evergreen Group embarked upon its
-                                    journey 64 years ago from Durgapur. Founded
-                                    by
-                                    <strong className="ml-2">
-                                        Shri H.D. Bhattad & G.D. Bhattad
+                                    The Evergreen Group began its journey over
+                                    64 years ago in Durgapur, founded by
+                                    <strong className="mx-2">
+                                        Shri H.D. Bhattad and Shri G.D. Bhattad
                                     </strong>
-                                    , we started our business with the name
-                                    Evergreen Timber Traders, supplying wooden
-                                    accessories to Durgapur Steel Plant. Today
-                                    the group has become a trusted service
-                                    partner for industrial needs and has
-                                    diversified into several divisions, mainly
-                                    comprising of civil construction, production
-                                    contracts, logistics, Ready Mix
-                                    Concrete.{" "}
+                                    under the name Evergreen Timber Traders,
+                                    initially supplying wooden accessories to
+                                    Durgapur Steel Plant. Over the decades, the
+                                    company has evolved into a leading
+                                    industrial service provider in the
+                                    Asansol–Durgapur industrial belt, becoming a
+                                    trusted partner for diverse industrial
+                                    requirements. Today, Evergreen Group
+                                    operates across multiple core sectors
+                                    including civil construction, production
+                                    contracts, industrial logistics, and Ready
+                                    Mix Concrete (RMC), delivering integrated
+                                    solutions to manufacturing, steel, and
+                                    infrastructure industries across Eastern
+                                    India.
                                 </p>
                             </div>
 
                             <div className="relative top-0 right-0">
                                 <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                                     <img
-                                        src="https://images.unsplash.com/photo-1694521787162-5373b598945c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        src="/backgrounds/ABOUT_US_MAIN_PAGE.png"
                                         alt="Engineering Legacy"
                                         className="w-full h-full object-cover"
                                     />
@@ -603,11 +608,16 @@ export default function AboutPage() {
 
                                 <p className="text-gray-600 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
                                     {" "}
-                                    To provide quality workmanship and customer
-                                    service while maintaining the highest level
-                                    of professionalism, honesty, and fairness in
-                                    our relationships with customers, employees,
-                                    and vendors.
+                                    Our mission is to deliver superior quality
+                                    workmanship and exceptional customer service
+                                    while upholding the highest standards of
+                                    professionalism, integrity, and
+                                    transparency. We are committed to building
+                                    long-term relationships based on honesty and
+                                    fairness with our clients, employees, and
+                                    business partners, ensuring trust,
+                                    reliability, and sustainable growth in every
+                                    project we undertake.
                                 </p>
                             </div>
 
@@ -635,14 +645,17 @@ export default function AboutPage() {
                                 </h2>
 
                                 <p className="leading-relaxed text-base sm:text-lg font-medium">
-                                    To be the leading provider of industrial and
-                                    commercial construction services in the
-                                    region, known for our commitment to quality
-                                    and customer satisfaction. We aim to grow
-                                    continually by delivering meaningful
-                                    solutions to existing markets and expanding
-                                    into new areas aligned with our competencies
-                                    and customer needs.
+                                    Our vision is to become the leading
+                                    industrial and commercial construction
+                                    company in the region, recognized for
+                                    excellence in quality, reliability, and
+                                    customer satisfaction. We strive for
+                                    continuous growth by delivering value-driven
+                                    solutions to existing markets while
+                                    strategically expanding into new sectors
+                                    that align with our core strengths,
+                                    technical expertise, and evolving client
+                                    requirements.
                                 </p>
                             </div>
                         </div>

@@ -38,23 +38,35 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                             >
                                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                    Our construction services started back in
-                                    1970’s and include land layout, designing
-                                    and complete civil construction. We
-                                    specialise in industrial and commercial
-                                    construction and believe in delivering
-                                    superior quality in a time bound manner
-                                    through our in house complete solution of
-                                    machinery, manpower and equipments. This has
-                                    helped us in becoming a leading name and
-                                    preferred partner for most of the industries
-                                    in this belt.{" "}
+                                    Industrial & Commercial Construction Company
+                                    in West Bengal Established in the 1970s, we
+                                    are a trusted industrial and commercial
+                                    construction company in West Bengal,
+                                    delivering comprehensive civil construction
+                                    services across the Durgapur industrial
+                                    belt. Our expertise includes land
+                                    development and layout planning, structural
+                                    designing, and complete civil construction
+                                    solutions for factories, warehouses,
+                                    processing plants, and commercial buildings.
+                                    With a fully integrated in-house setup of
+                                    advanced machinery, skilled manpower, and
+                                    modern equipment, we ensure seamless project
+                                    execution from concept to completion. We are
+                                    committed to delivering high-quality
+                                    construction projects within strict
+                                    timelines, maintaining the highest standards
+                                    of safety, durability, and engineering
+                                    excellence. Over the decades, this
+                                    dedication has positioned us as a preferred
+                                    construction partner for leading industries
+                                    in the region.
                                 </p>
                             </motion.div>
-                            <div className="relative">
-                                <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                            <div className="relative ">
+                                <div className="aspect-video w-137.5 h-112.5 rounded-2xl overflow-hidden shadow-2xl">
                                     <img
-                                        src="/companies/emcl_ecpl.jpeg"
+                                        src="/companies/ECPL_PAGE.png"
                                         alt="Engineering Legacy"
                                         className="w-full h-full object-cover"
                                     />

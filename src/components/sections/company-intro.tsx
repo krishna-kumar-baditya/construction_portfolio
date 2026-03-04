@@ -25,13 +25,22 @@ export default function CompanyIntro() {
                         </h3>
                         <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                             Established in 1988, Evergreen Group is a leading
-                            name in the Asansol–Durgapur industrial belt, with
-                            over three decades of expertise in civil,
-                            structural, and production contracts. Backed by a
-                            comprehensive in-house machinery fleet, we deliver
-                            integrated industrial solutions and execute complex
-                            projects across Eastern and Central India with
-                            efficiency and reliability.
+                            industrial contracting company in the
+                            Asansol–Durgapur industrial belt, delivering over
+                            three decades of expertise in civil construction,
+                            structural engineering, and production contract
+                            services. As a trusted civil and structural
+                            contractor in West Bengal, we specialize in
+                            executing large-scale industrial and infrastructure
+                            projects across Eastern and Central India. Backed by
+                            a fully integrated in-house machinery fleet and
+                            skilled workforce, we provide end-to-end industrial
+                            project execution with a strong focus on quality,
+                            safety, and timely completion. Our proven track
+                            record has positioned us as a preferred partner for
+                            steel plants, manufacturing units, and
+                            infrastructure companies seeking reliable and
+                            efficient industrial solutions.
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <a
@@ -52,7 +61,7 @@ export default function CompanyIntro() {
                     >
                         <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                             <img
-                                src="/backgrounds/about.jpeg"
+                                src="/backgrounds/About.png"
                                 alt="Infrastructure Project Team"
                                 className="w-full h-full object-cover"
                             />

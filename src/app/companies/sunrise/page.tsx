@@ -50,44 +50,11 @@ export default function AboutPage() {
                                     of BPCL MAK Lubricants and BKT, Appolo & JK
                                     Tyres.{" "}
                                 </p>
-                                <a
-                                    href="https://sunrisemovers.in/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="
-                                      relative inline-flex items-center justify-center
-                                      px-8 py-3
-                                      text-sm font-semibold tracking-wide
-                                      border-2 border-[#F2913F]
-                                      text-[#F2913F]
-                                      rounded-full
-                                      overflow-hidden
-                                      transition-all duration-300 ease-in-out
-                                      hover:text-white
-                                      group
-                                    "
-                                >
-                                    <span className="relative z-10 mr-2">
-                                        Visit Our Website
-                                    </span>
-                                        <ExternalLink/>
-
-                                    {/* Sliding Background */}
-                                    <span
-                                        className="
-                                          absolute inset-0
-                                          bg-[#F2913F]
-                                          translate-y-full
-                                          group-hover:translate-y-0
-                                          transition-transform duration-300 ease-in-out
-                                        "
-                                    />
-                                </a>
                             </motion.div>
                             <div className="relative">
-                                <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                                <div className="aspect-video w-137.5 h-112.5 rounded-2xl overflow-hidden shadow-2xl">
                                     <img
-                                        src="/companies/sunrise.jpeg"
+                                        src="/companies/SUNRISE_MOVERS_PAGE.png"
                                         alt="Engineering Legacy"
                                         className="w-full h-full object-cover"
                                     />

@@ -37,17 +37,24 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                             >
                                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                    Our minerals division deals in Sand, Silica
-                                    Sand, Quartz and Stone chips. We have
-                                    several mines in West Bengal and Jharkhand
-                                    and also have set up a dedicated Sand
-                                    Processing Unit in Kharagpur for Silica Sand
-                                    supply to Tata Metaliks Limited under a long
-                                    term contract.{" "}
+                                    We are a leading sand and silica sand
+                                    supplier in West Bengal and Jharkhand,
+                                    offering premium-quality quartz, stone
+                                    chips, and industrial sand for foundries,
+                                    steel plants, and manufacturing units. Our
+                                    mining operations ensure a steady supply of
+                                    raw minerals, while our modern sand
+                                    processing unit in Kharagpur produces
+                                    high-grade silica sand that meets strict
+                                    industrial standards. We are proud to supply
+                                    processed silica sand to Tata Metaliks
+                                    Limited under a long-term contract, ensuring
+                                    consistency, quality control, and timely
+                                    delivery.
                                 </p>
                             </motion.div>
                             <div className="relative">
-                                <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                                <div className="aspect-video w-137.5 h-80.5 rounded-2xl overflow-hidden shadow-2xl">
                                     <img
                                         src="/companies/vrminerals.jpeg"
                                         alt="Engineering Legacy"
