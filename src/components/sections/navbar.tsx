@@ -4,8 +4,18 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
+type DropdownItem = {
+    label: string;
+    href: string;
+    logo?: string; // optional
+};
 
-const NAV_LINKS = [
+type NavLink = {
+    label: string;
+    href: string;
+    dropdown?: DropdownItem[];
+};
+const NAV_LINKS:NavLink[] = [
     { label: "Home", href: "/" },
     {
         label: "About Us",
