@@ -6,47 +6,33 @@ import Image from "next/image";
 
 type Category = "projects" | "equipments";
 
-const galleryData: Record<
-    Category,
-    { id: number; src: string; name?: string }[]
-> = {
+const galleryData: Record<Category, { id: number; src: string }[]> = {
     projects: [
-        // { id: 9, src: "/gallery/p9.jpeg", name: "" },
-        // { id: 5, src: "/gallery/p5.jpeg", name: "Inspection pit 1st lift wall shuttering work" },
-        // { id: 8, src: "/gallery/p8.jpeg", name: "" },
-        { id: 10, src: "/gallery/p10.jpeg", name: "" },
-        // { id: 4, src: "/gallery/p4.jpeg", name: "Inspection Pit shuttering work" },
-        // { id: 11, src: "/gallery/p11.jpeg", name: "" },
-        // { id: 2, src: "/gallery/p2.jpeg", name: "Shuttering work" },
-        { id: 12, src: "/gallery/p12.jpeg", name: "" },
-        // { id: 7, src: "/gallery/p7.jpeg", name: "Hopper Pit" },
-        { id: 13, src: "/gallery/p13.jpeg", name: "" },
-        // { id: 1, src: "/gallery/p1.jpeg", name: "Reinforcement work completed" },
-        { id: 18, src: "/gallery/p18.jpeg", name: "" },
-        { id: 16, src: "/gallery/p16.jpeg", name: "" },
-        // { id: 6, src: "/gallery/p6.jpeg", name: "Inspection Pit final lift Shuttering work" },
-        { id: 20, src: "/gallery/p20.jpeg" },
+        { id: 1, src: "/gallery/p1.png" },
+        { id: 2, src: "/gallery/p2.png" },
+        { id: 3, src: "/gallery/p3.png" },
+        { id: 4, src: "/gallery/p4.png" },
+        { id: 10, src: "/gallery/p10.jpeg" },
+        { id: 12, src: "/gallery/p12.jpeg" },
+        { id: 13, src: "/gallery/p13.jpeg" },
+        { id: 18, src: "/gallery/p18.jpeg" },
+        { id: 16, src: "/gallery/p16.jpeg" },
         { id: 15, src: "/gallery/p15.jpeg" },
-        { id: 22, src: "/gallery/p22.jpeg" },
         { id: 23, src: "/gallery/p23.jpeg" },
         { id: 14, src: "/gallery/p14.jpeg" },
         { id: 26, src: "/gallery/p26.jpeg" },
         { id: 17, src: "/gallery/p17.jpeg" },
         { id: 24, src: "/gallery/p24.jpeg" },
-        // { id: 3, src: "/gallery/p3.jpeg", name: "Slab Reinforcement and Shuttering work" },
         { id: 25, src: "/gallery/p25.jpeg" },
         { id: 27, src: "/gallery/p27.jpeg" },
-        { id: 21, src: "/gallery/p21.jpeg" },
         { id: 19, src: "/gallery/p19.jpeg" },
         { id: 28, src: "/gallery/p28.jpeg" },
     ],
-    "equipments": [
-        // { id: 5, src: "/gallery/1.jpeg" },
+    equipments: [
         { id: 6, src: "/gallery/2.jpeg" },
         { id: 7, src: "/gallery/3.jpeg" },
         { id: 8, src: "/gallery/4.jpeg" },
         { id: 9, src: "/gallery/5.jpeg" },
-        // { id: 10, src: "/gallery/9.jpeg" },
     ],
 };
 
@@ -78,25 +64,24 @@ export default function Gallery() {
                     <div className="max-w-7xl mx-auto">
                         {/* Tab Buttons */}
                         <div className="flex justify-center gap-6 mb-10">
-                            {(
-                                ["projects", "equipments"] as Category[]
-                            ).map((tab) => (
-                                <button
-                                    key={tab}
-                                    onClick={() => setActiveTab(tab)}
-                                    className={`px-6 py-2 rounded-full font-semibold capitalize transition-all duration-300
+                            {(["projects", "equipments"] as Category[]).map(
+                                (tab) => (
+                                    <button
+                                        key={tab}
+                                        onClick={() => setActiveTab(tab)}
+                                        className={`px-6 py-2 rounded-full font-semibold capitalize transition-all duration-300
                       ${
                           activeTab === tab
                               ? "bg-[#F2913F] text-white"
                               : "bg-white text-gray-600 hover:bg-gray-200"
                       }`}
-                                >
-                                    {tab}
-                                </button>
-                            ))}
+                                    >
+                                        {tab}
+                                    </button>
+                                ),
+                            )}
                         </div>
 
-                        {/* Grid */}
                         {/* Grid */}
                         <AnimatePresence mode="wait">
                             <motion.div
@@ -114,20 +99,12 @@ export default function Gallery() {
                                     >
                                         <Image
                                             src={image.src}
-                                            alt={image.name || "Gallery Image"}
+                                            alt={ "Project Image"}
                                             fill
                                             className="object-cover transition-transform duration-500 group-hover:scale-110"
                                         />
 
-                                        {/* Overlay */}
-                                        {image.name &&
-                                            image.name.trim() !== "" && (
-                                                <div className="absolute inset-0 bg-black/50 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                                                    <p className="text-white text-sm md:text-base font-medium">
-                                                        {image.name}
-                                                    </p>
-                                                </div>
-                                            )}
+                                       
                                     </div>
                                 ))}
                             </motion.div>
