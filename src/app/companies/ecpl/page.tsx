@@ -38,20 +38,19 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                             >
                                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                    Industrial & Commercial Construction Company
-                                    in West Bengal Established in the 1970s, we
-                                    are a trusted industrial and commercial
-                                    construction company in West Bengal,
-                                    delivering comprehensive civil construction
-                                    services across the Durgapur industrial
-                                    belt. Our expertise includes land
-                                    development and layout planning, structural
-                                    designing, and complete civil construction
-                                    solutions for factories, warehouses,
-                                    processing plants, and commercial buildings.
-                                    With a fully integrated in-house setup of
-                                    advanced machinery, skilled manpower, and
-                                    modern equipment, we ensure seamless project
+                                    Established in the 1970s, we are a trusted
+                                    industrial and commercial construction
+                                    company in West Bengal, delivering
+                                    comprehensive civil construction services
+                                    across Eastern India. Our
+                                    expertise includes land development and
+                                    layout planning, structural designing, and
+                                    complete civil construction solutions for
+                                    factories, warehouses, processing plants,
+                                    and commercial buildings. With a fully
+                                    integrated in-house setup of advanced
+                                    machinery, skilled manpower, and modern
+                                    equipment, we ensure seamless project
                                     execution from concept to completion. We are
                                     committed to delivering high-quality
                                     construction projects within strict

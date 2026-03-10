@@ -10,11 +10,9 @@ const galleryData: Record<Category, { id: number; src: string }[]> = {
     projects: [
         { id: 1, src: "/gallery/p1.png" },
         { id: 2, src: "/gallery/p2.png" },
-        { id: 3, src: "/gallery/p3.png" },
+        { id: 3, src: "/gallery/p3.jpeg" },
         { id: 4, src: "/gallery/p4.png" },
-        { id: 10, src: "/gallery/p10.jpeg" },
-        { id: 12, src: "/gallery/p12.jpeg" },
-        { id: 13, src: "/gallery/p13.jpeg" },
+        { id: 10, src: "/gallery/p5.jpeg" },
         { id: 18, src: "/gallery/p18.jpeg" },
         { id: 16, src: "/gallery/p16.jpeg" },
         { id: 15, src: "/gallery/p15.jpeg" },
@@ -29,10 +27,15 @@ const galleryData: Record<Category, { id: number; src: string }[]> = {
         { id: 28, src: "/gallery/p28.jpeg" },
     ],
     equipments: [
-        { id: 6, src: "/gallery/2.jpeg" },
-        { id: 7, src: "/gallery/3.jpeg" },
-        { id: 8, src: "/gallery/4.jpeg" },
-        { id: 9, src: "/gallery/5.jpeg" },
+        { id: 1, src: "/gallery/e1.jpeg" },
+        { id: 2, src: "/gallery/e2.jpeg" },
+        { id: 3, src: "/gallery/e3.jpeg" },
+        { id: 4, src: "/gallery/e4.jpeg" },
+        { id: 6, src: "/gallery/e6.jpeg" },
+        { id: 7, src: "/gallery/e7.jpeg" },
+        { id: 8, src: "/gallery/e8.jpeg" },
+        { id: 9, src: "/gallery/e9.jpeg" },
+        { id: 10, src: "/gallery/e10.jpeg" },
     ],
 };
 

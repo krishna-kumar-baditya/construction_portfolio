@@ -506,7 +506,7 @@ export default function ConstructionProjectsTable() {
                 {/* Header */}
                 <div className="p-5 border-b">
                     <h2 className="text-xl md:text-2xl font-semibold text-gray-800 text-center">
-                        Construction Project Orders
+                        Major Construction Projects
                     </h2>
                 </div>
 

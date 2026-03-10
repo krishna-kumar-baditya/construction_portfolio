@@ -16,7 +16,10 @@ export default function AboutPage() {
                             animate={{ opacity: 1, y: 0 }}
                             className="text-5xl md:text-7xl font-black text-white mb-6"
                         >
-                            EVERGREEN MOVERS   <span className="text-[#F2913F] ml-2">PVT. LTD.</span>
+                            EVERGREEN MOVERS{" "}
+                            <span className="text-[#F2913F] ml-2">
+                                PVT. LTD.
+                            </span>
                         </motion.h1>
                     </div>
                     <div className="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
@@ -34,18 +37,20 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                             >
                                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                    Our logistics division handles approximately
-                                    2 lacs MT of bulk raw materials every month,
-                                    such as iron ore, manganese ore, and coal
-                                    for all the major factories in the Durgapur
-                                    belt. Our proven track record has made us a
-                                    trusted partner in the industry serving them
-                                    from various railway sidings and ports
-                                    through our inhouse fleet of all necessary
-                                    machinery, equipments and tippers. We have a
-                                    BPCL petrol pump and are authorized dealers
-                                    of BPCL MAK Lubricants and BKT, Appolo & JK
-                                    Tyres.{" "}
+                                    Our minerals division deals in
+                                    premium-quality quartz and industrial sand
+                                    for foundries, steel plants, and
+                                    manufacturing units. We have long term lease
+                                    for several mines in West Bengal and
+                                    Jharkhand and have also set up a dedicated
+                                    Sand Processing Unit in Kharagpur for Silica
+                                    Sand supply to Tata Metaliks Limited under a
+                                    long term contract. We have recently secured
+                                    a long term lease for stone chips mines in
+                                    Jharkhand and are in process to start
+                                    operations in near future. Through this we
+                                    target to cater the booming construction and
+                                    infrastructure industry in the State.{" "}
                                 </p>
                             </motion.div>
                             <div className="relative">
@@ -62,7 +67,6 @@ export default function AboutPage() {
                 </section>
 
                 {/* Mission & Vision */}
-               
             </main>
         </div>
     );

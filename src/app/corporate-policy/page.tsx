@@ -84,36 +84,7 @@ export default function CorporatePolicyPage() {
                                 </p>
                             </motion.div>
 
-                            {/* HSE POLICY */}
-                            <motion.div
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: 0.1 }}
-                                className="bg-white border border-gray-200 rounded-xl p-10 shadow-sm hover:shadow-lg transition-all duration-300 relative"
-                            >
-                                <div className="absolute left-0 top-0 h-full w-1 bg-[#F2913F]" />
-
-                                <h3 className="text-2xl font-bold text-[#0B1B3A] mb-4">
-                                    Health, Safety & Environmental Policy  
-                                    <span className="text-sm block mt-1 text-gray-500">
-                                        (ISO 45001 & ISO 14001)
-                                    </span>
-                                </h3>
-
-                                <ul className="space-y-3 text-gray-700 text-lg leading-relaxed">
-                                    <li>• Maintaining a safe and healthy work environment</li>
-                                    <li>• Preventing workplace injuries and incidents</li>
-                                    <li>• Minimizing environmental impact</li>
-                                    <li>• Promoting sustainable engineering practices</li>
-                                    <li>• Conducting regular risk assessments and safety training</li>
-                                </ul>
-
-                                <p className="mt-6 text-gray-700">
-                                    Our objective is zero harm and responsible environmental stewardship.
-                                </p>
-                            </motion.div>
-
+                            
                             {/* ETHICS POLICY */}
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}

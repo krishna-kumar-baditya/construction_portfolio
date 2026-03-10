@@ -37,22 +37,20 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                             >
                                 <p className="text-lg text-gray-600 mb-6 text-justify leading-relaxed">
-                                    Cold Storage Facility in Aligarh, Uttar
-                                    Pradesh Our state-of-the-art cold storage
-                                    facility in Aligarh, Uttar Pradesh, is
-                                    spread across 4 acres, featuring a massive
-                                    75,000 sq. ft. temperature-controlled
-                                    storage shed. Designed for efficiency and
-                                    reliability, the facility provides
-                                    cost-effective butter storage solutions at
-                                    -20°C, with a total storage capacity
-                                    exceeding 6,500 metric tonnes (MT). We
-                                    proudly serve leading dairy brands such as
-                                    Mother Dairy and Bhole Baba Dairy, ensuring
-                                    strict temperature control, quality
-                                    preservation, and dependable logistics
-                                    support. As part of our expansion strategy,
-                                    we are currently in the process of
+                                    Our state-of-the-art cold storage facility
+                                    in Aligarh, Uttar Pradesh, is spread across
+                                    4 acres, featuring 75,000 sq. ft.
+                                    temperature-controlled storage shed.
+                                    Designed for efficiency and reliability, the
+                                    facility provides cost-effective butter
+                                    storage solutions at -20°C, with a total
+                                    storage capacity exceeding 6,500 metric
+                                    tonnes (MT). We proudly serve leading dairy
+                                    brands such as Mother Dairy and Bhole Baba
+                                    Dairy, ensuring strict temperature control,
+                                    quality preservation, and dependable
+                                    logistics support. As part of our expansion
+                                    strategy, we are currently in the process of
                                     establishing a modern pea processing plant
                                     within the same premises. Furthermore, we
                                     have future plans to set up a paneer

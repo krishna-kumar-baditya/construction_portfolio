@@ -37,24 +37,36 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                             >
                                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                    Our logistics division handles approximately
-                                    2 lacs MT of bulk raw materials every month,
-                                    such as iron ore, manganese ore, and coal
-                                    for all the major factories in the Durgapur
-                                    belt. Our proven track record has made us a
+                                    For over 20 years, we have been
+                                    providing seamless end-to-end raw material
+                                    logistics solutions of almost 2 lacs MT bulk
+                                    raw materials every month that power
+                                    industries and communities in the Durgapur
+                                    industrial belt. From bulk rail consignments
+                                    to last-mile delivery, our operations are
+                                    designed to minimize transit time, reduce
+                                    handling losses, and maintain product
+                                    quality until it reaches its destination.
+                                    Whether serving large-scale power plants or
+                                    smaller industrial units, our mission is to
+                                    keep the operations running smoothly by
+                                    ensuring a steady and dependable bulk
+                                    material movement by leveraging advanced
+                                    scheduling systems, GPS-enabled tracking
+                                    etc. Our proven track record has made us a
                                     trusted partner in the industry serving them
                                     from various railway sidings and ports
                                     through our inhouse fleet of all necessary
-                                    machinery, equipments and tippers. We have a
-                                    BPCL petrol pump and are authorized dealers
-                                    of BPCL MAK Lubricants and BKT, Appolo & JK
-                                    Tyres.{" "}
+                                    equipment, heavy machinery and tippers. We
+                                    also operate a BPCL petrol pump and are
+                                    authorized dealers of BPCL MAK Lubricants
+                                    and BKT, Apollo & JK Tyres.{" "}
                                 </p>
                             </motion.div>
                             <div className="relative">
                                 <div className="aspect-video w-137.5 h-112.5 rounded-2xl overflow-hidden shadow-2xl">
                                     <img
-                                        src="/companies/SUNRISE_MOVERS_PAGE.png"
+                                        src="/companies/SUNRISE_MOVERS_PAGE.jpeg"
                                         alt="Engineering Legacy"
                                         className="w-full h-full object-cover"
                                     />

@@ -46,36 +46,26 @@ export default function AboutPage() {
                                     capacity of approximately 3,500 cubic meters
                                     per month, we ensure timely supply and
                                     consistent quality for diverse construction
-                                    requirements.
+                                    requirements. We manufacture a wide range of
+                                    concrete products, including: Standard Grade
+                                    RMC (M20 to M40), High Strength Concrete
+                                    (M45 and above), Self-Compacting Concrete
+                                    (SCC) & Fibre Reinforced Concrete (FRC). Our
+                                    advanced infrastructure includes a Schwing
+                                    Stetter batching plant and concrete pumps,
+                                    modern transit mixers, high-capacity cement
+                                    silos, a state-of-the-art quality control
+                                    laboratory, and an Essae weighbridge for
+                                    precise material measurement. With modern
+                                    equipment, strict quality testing, and
+                                    efficient logistics, we are recognized as a
+                                    reliable RMC supplier in Kolkata, delivering
+                                    durable and high-performance concrete
+                                    solutions.
                                 </p>
-                                <p className="text-lg text-gray-600 mb-4 font-semibold">
-                                    We manufacture a wide range of concrete
-                                    products, including:
-                                </p>
-                                <ul className="list-disc pl-6 text-lg text-gray-600 space-y-2 mb-6">
-                                    <li>Standard Grade RMC (M20 to M40)</li>
-                                    <li>
-                                        High Strength Concrete (M45 and above)
-                                    </li>
-                                    <li>Self-Compacting Concrete (SCC)</li>
-                                    <li>Fibre Reinforced Concrete (FRC)</li>
-                                </ul>
-                                <p className="text-lg text-gray-600 leading-relaxed">
-                                    Our advanced infrastructure includes a
-                                    Schwing Stetter batching plant and concrete
-                                    pumps, modern transit mixers, high-capacity
-                                    cement silos, a state-of-the-art quality
-                                    control laboratory, and an Essae weighbridge
-                                    for precise material measurement. With
-                                    modern equipment, strict quality testing,
-                                    and efficient logistics, we are recognized
-                                    as a reliable RMC supplier in Kolkata,
-                                    delivering durable and high-performance
-                                    concrete solutions.
-                                </p>{" "}
                             </motion.div>
                             <div className="relative">
-                                <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                                <div className="h-125 rounded-2xl overflow-hidden shadow-2xl">
                                     <img
                                         src="/companies/ssky_high.jpeg"
                                         alt="Engineering Legacy"

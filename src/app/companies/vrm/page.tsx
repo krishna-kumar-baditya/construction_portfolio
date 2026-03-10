@@ -37,20 +37,21 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                             >
                                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                    We are a leading sand and silica sand
-                                    supplier in West Bengal and Jharkhand,
-                                    offering premium-quality quartz, stone
-                                    chips, and industrial sand for foundries,
-                                    steel plants, and manufacturing units. Our
-                                    mining operations ensure a steady supply of
-                                    raw minerals, while our modern sand
-                                    processing unit in Kharagpur produces
-                                    high-grade silica sand that meets strict
-                                    industrial standards. We are proud to supply
-                                    processed silica sand to Tata Metaliks
-                                    Limited under a long-term contract, ensuring
-                                    consistency, quality control, and timely
-                                    delivery.
+                                    Coal remains one of the world’s most vital
+                                    energy resources, and we stand at the
+                                    forefront of its responsible extraction and
+                                    transportation. We pride ourselves on
+                                    building long-term relationships with our
+                                    clients by offering flexible transport
+                                    options, transparent communication, and
+                                    consistent on-time delivery. From deep
+                                    underground mines to railway sidings, we
+                                    manage the entire journey of coal with
+                                    precision. Our integrated operations combine
+                                    modern mining techniques with a reliable
+                                    transportation fleet, ensuring that every
+                                    consignment reaches to the siding
+                                    efficiently.
                                 </p>
                             </motion.div>
                             <div className="relative">
