@@ -58,13 +58,24 @@ const HeroSection = () => {
         // Trigger entrance animations
         const timer = setTimeout(() => setIsVisible(true), 100);
 
-
         return () => clearTimeout(timer);
     }, []);
 
     return (
         <section className="relative h-screen w-full overflow-hidden bg-black">
+            {/* Background Video */}
+            <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+            >
+                <source src="/video/hero-video.mp4" type="video/mp4" />
+            </video>
 
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/70"></div>
             {/* Content Layer */}
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
                 <div
