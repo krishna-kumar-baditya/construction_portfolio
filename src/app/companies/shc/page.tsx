@@ -37,11 +37,10 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                             >
                                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                    Ready Mix Concrete (RMC) Manufacturer in
-                                    Kolkata Our Ready Mix Concrete (RMC)
-                                    division in Kolkata specializes in
-                                    delivering high-quality concrete solutions
-                                    for residential, commercial, and industrial
+                                    Our Ready Mix Concrete (RMC) division in
+                                    Kolkata specializes in delivering
+                                    high-quality concrete solutions for
+                                    residential, commercial, and industrial
                                     construction projects. With a production
                                     capacity of approximately 3,500 cubic meters
                                     per month, we ensure timely supply and

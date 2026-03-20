@@ -37,13 +37,20 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                             >
                                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                    Our minerals division deals in Sand, Silica
-                                    Sand, Quartz and Stone chips. We have
-                                    several mines in West Bengal and Jharkhand
-                                    and also have set up a dedicated Sand
-                                    Processing Unit in Kharagpur for Silica Sand
-                                    supply to Tata Metaliks Limited under a long
-                                    term contract.{" "}
+                                    Our minerals division deals in
+                                    premium-quality quartz and industrial sand
+                                    for foundries, steel plants, and
+                                    manufacturing units. We have long term lease
+                                    for several mines in West Bengal and
+                                    Jharkhand and have also set up a dedicated
+                                    Sand Processing Unit in Kharagpur for Silica
+                                    Sand supply to Tata Metaliks Limited under a
+                                    long term contract. We have recently secured
+                                    a long term lease for stone chips mines in
+                                    Jharkhand and are in process to start
+                                    operations in near future. Through this we
+                                    target to cater the booming construction and
+                                    infrastructure industry in the State.{" "}
                                 </p>
                             </motion.div>
                             <div className="relative">

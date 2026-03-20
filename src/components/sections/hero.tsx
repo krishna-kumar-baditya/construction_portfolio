@@ -88,7 +88,7 @@ const HeroSection = () => {
                     {/* Main Headline */}
                     <h1 className="flex flex-col items-center mb-6 sm:mb-8 md:mb-10">
                         <span className="text-white text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none mb-2">
-                            ONE STOP SOLUTIONS
+                            ONE STOP SOLUTION
                         </span>
                         <span className="text-[#F2913F] text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight uppercase leading-none mb-2">
                             FOR YOUR INDUSTRIAL NEEDS
@@ -118,15 +118,6 @@ const HeroSection = () => {
                         </div>
                     </div>
 
-                    {/* Tagline */}
-                    <div className="text-lg sm:text-2xl md:text-3xl font-semibold leading-tight">
-                        <span className="text-[#F2913F]">
-                            Strategizing the future
-                        </span>{" "}
-                        <span className="text-white">
-                            of sustainable infrastructure.
-                        </span>
-                    </div>
                 </div>
             </div>
 

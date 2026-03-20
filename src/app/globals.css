@@ -154,3 +154,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.segoe-font {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}

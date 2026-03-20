@@ -30,53 +30,67 @@ export default function AboutPage() {
                 <section id="history" className="py-16">
                     <div className="max-w-6xl mx-auto px-4 sm:px-6">
                         {/* Content Grid */}
-                        <div className="grid md:grid-cols-3 justify-center items-center gap-10 mt-10">
-                            <div className="md:col-span-2">
-                                <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B1B3A] mb-6">
-                                    Our History
-                                </h1>
+                        <div className="mt-10">
+                            {/* TOP HEADING (FULL WIDTH) */}
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B1B3A] mb-10">
+                                Our History
+                            </h1>
 
-                                <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
-                                    The Evergreen Group began its journey in
-                                    1960 in Durgapur. Founded by
-                                    <strong className=" mx-2">
-                                        Shri H.D. Bhattad & Shri G.D. Bhattad
-                                    </strong>
-                                    , the group started its operations under the
-                                    name Evergreen Timber Traders, manufacturing
-                                    & supplying wooden frames & accessories to
-                                    the then upcoming Durgapur Steel Plant.
-                                    Later, we ventured into civil construction
-                                    services and also set up our brick kiln
-                                    under the brand Evergreen Bricks. Over the
-                                    decades, the company has evolved into a
-                                    leading industrial service provider in the
-                                    Asansol–Durgapur industrial belt, becoming a
-                                    trusted partner for a wide range of diverse
-                                    industrial requirements. Today, Evergreen
-                                    Group operates across multiple core sectors
-                                    including civil construction, production
-                                    contracts, industrial logistics, and supply
-                                    of minerals and Ready Mix Concrete (RMC),
-                                    delivering integrated solutions to
-                                    manufacturing, steel, and infrastructure
-                                    industries across Eastern India.
-                                    Headquartered in Durgapur, the main
-                                    locations of operation of these activities
-                                    are in Bengal (Durgapur, Kolkata, Asansol,
-                                    Kharagpur, Bankura, Purulia and Panagarh)
-                                    and Jharkhand (Hazaribagh, Bokaro & Dhanbad)
-                                    and Uttar Pradesh (Aligarh).
-                                </p>
-                            </div>
+                            {/* WRAPPER */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                                {/* LEFT TEXT */}
+                                <div className="space-y-5">
+                                    <p className="text-gray-700 leading-relaxed text-base sm:text-lg text-justify">
+                                        The Evergreen Group began its journey in
+                                        1960 in Durgapur. Founded by
+                                        <strong className="ml-2">
+                                            Shri H.D. Bhattad & Shri G.D.
+                                            Bhattad
+                                        </strong>
+                                        , the group started its operations under
+                                        the name Evergreen Timber Traders,
+                                        manufacturing & supplying wooden frames
+                                        & accessories to the then upcoming
+                                        Durgapur Steel Plant. Later, we ventured
+                                        into civil construction services and
+                                        also set up our brick kiln under the
+                                        brand Evergreen Bricks. Over the
+                                        decades, the company has evolved into a
+                                        leading industrial service provider in
+                                        the Asansol–Durgapur industrial belt,
+                                        becoming a trusted partner for a wide
+                                        range of diverse industrial
+                                        requirements. Today, Evergreen Group
+                                        operates across multiple core sectors
+                                        including civil construction, production
+                                        contracts, industrial logistics, and
+                                        supply of minerals and Ready Mix
+                                        Concrete (RMC), delivering integrated
+                                        solutions to manufacturing, steel, and
+                                        infrastructure industries across Eastern
+                                        India.
+                                    </p>
 
-                            <div className="relative top-0 right-0">
-                                <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                                    <img
-                                        src="/backgrounds/ABOUT_US_MAIN_PAGE.jpeg"
-                                        alt="Engineering Legacy"
-                                        className="w-full h-full object-cover"
-                                    />
+                                    <p className="text-gray-700 leading-relaxed text-base sm:text-lg text-justify">
+                                        Headquartered in Durgapur, the main
+                                        locations of operation of these
+                                        activities are in Bengal (Durgapur,
+                                        Kolkata, Asansol, Kharagpur, Bankura,
+                                        Purulia and Panagarh) and Jharkhand
+                                        (Hazaribagh, Bokaro & Dhanbad) and Uttar
+                                        Pradesh (Aligarh).
+                                    </p>
+                                </div>
+
+                                {/* RIGHT IMAGE */}
+                                <div>
+                                    <div className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                                        <img
+                                            src="/backgrounds/ABOUT_US_MAIN_PAGE.jpeg"
+                                            alt="Engineering Legacy"
+                                            className="w-full h-full object-fit"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -107,18 +121,18 @@ export default function AboutPage() {
                                 <div
                                     key={item}
                                     className="
-                group
-                bg-white
-                border border-gray-200
-                rounded-xl
-                p-6 sm:p-8
-                shadow-sm
-                hover:shadow-xl
-                hover:-translate-y-1
-                transition-all duration-300
-                relative
-                overflow-hidden
-            "
+                                        group
+                                        bg-white
+                                        border border-gray-200
+                                        rounded-xl
+                                        p-6 sm:p-8
+                                        shadow-sm
+                                        hover:shadow-xl
+                                        hover:-translate-y-1
+                                        transition-all duration-300
+                                        relative
+                                        overflow-hidden
+                                    "
                                 >
                                     {/* Left Accent Line */}
                                     <div className="absolute left-0 top-0 h-full w-1 bg-[#0B1B3A] group-hover:bg-[#F2913F] transition-colors duration-300" />
@@ -242,8 +256,7 @@ export default function AboutPage() {
                             From The Founders Desk
                         </h2>
 
-                        <div className="flex flex-col gap-12">
-                            {/* Image */}
+                        {/* <div className="flex flex-col gap-12">
                             <div className="flex">
                                 <div className=" w-full">
                                     <img
@@ -254,7 +267,6 @@ export default function AboutPage() {
                                 </div>
                             </div>
 
-                            {/* Founder Message */}
                             <div className="text-gray-700 space-y-4 text-justify leading-relaxed">
                                 <p>
                                     At <strong>EVERGREEN</strong>, our journey
@@ -303,7 +315,116 @@ export default function AboutPage() {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
+                        {/* ================= FOUNDERS MESSAGE WITH IMAGES ================= */}
+                        <section className="py-20 bg-white">
+                            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                                <div className="grid lg:grid-cols-3 gap-8 items-stretch">
+                                    {/* Left Image */}
+                                    <div className="w-full h-full">
+                                        <div className="h-full min-h-[400px] overflow-hidden rounded-2xl shadow-lg">
+                                            <img
+                                                src="/founders/f1.jpeg"
+                                                alt="Founder Left"
+                                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* Center Paragraph */}
+                                    <div className="flex flex-col h-[500px] segoe-font">
+                                        <div className="overflow-y-auto pr-2 space-y-5 text-gray-700 text-sm sm:text-base leading-relaxed text-justify">
+                                            <p>
+                                                At <strong>EVERGREEN</strong>,
+                                                our journey began with a simple
+                                                yet powerful belief — that
+                                                excellence is not an act, but a
+                                                habit. From our humble
+                                                beginnings to becoming a trusted
+                                                partner across multiple
+                                                industries, our mission has
+                                                always been clear:{" "}
+                                                <strong>
+                                                    to deliver reliable,
+                                                    innovative, and sustainable
+                                                    solutions that empower our
+                                                    clients to succeed.
+                                                </strong>
+                                            </p>
+
+                                            <p>
+                                                In today’s fast-changing
+                                                industrial landscape,
+                                                versatility is not just an
+                                                advantage — it’s a necessity.
+                                                That’s why we have built a
+                                                diverse portfolio of services,
+                                                spanning project management,
+                                                civil and mechanical
+                                                engineering, industrial
+                                                production contracts, logistics
+                                                and transportation; enabling us
+                                                to meet complex challenges with
+                                                agility and precision.
+                                            </p>
+
+                                            <p>
+                                                Our strength lies in our people
+                                                — a team of skilled
+                                                professionals who share a
+                                                passion for quality, safety, and
+                                                continuous improvement. We
+                                                believe in forging long-term
+                                                relationships based on trust,
+                                                transparency, and mutual growth.
+                                                Every project we undertake is a
+                                                commitment to deliver not just
+                                                on expectations, but beyond
+                                                them.
+                                            </p>
+
+                                            <p>
+                                                As we look to the future, we
+                                                remain dedicated to embracing
+                                                new technologies, sustainable
+                                                practices, and best standards —
+                                                ensuring that we continue to be
+                                                a partner of choice for the
+                                                industries in our region.
+                                            </p>
+                                        </div>
+
+                                        {/* Fixed Bottom Content */}
+                                        <div className="pt-4 mt-4 border-t font-semibold text-[#0B1B3A]">
+                                            <p>
+                                                Thank you for being part of our
+                                                journey. Together, we will build
+                                                a future defined by innovation,
+                                                resilience, and shared success.
+                                            </p>
+
+                                            <div className="mt-3">
+                                                <p>H.D.Bhattad & G.D.Bhattad</p>
+                                                <p className="text-sm font-medium text-gray-600">
+                                                    Founder & Chairperson <br />
+                                                    Evergreen Group
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* Right Image */}
+                                    <div className="w-full h-full">
+                                        <div className="h-full min-h-[400px] overflow-hidden rounded-2xl shadow-lg">
+                                            <img
+                                                src="/founders/f2.jpeg"
+                                                alt="Founder Right"
+                                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </section>
             </main>
