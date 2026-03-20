@@ -70,15 +70,15 @@ export default function AboutPage() {
                                 </p>
                             </div>
 
-                            {/* <div className="relative top-0 right-0">
+                            <div className="relative top-0 right-0">
                                 <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                                     <img
-                                        src="/backgrounds/ABOUT_US_MAIN_PAGE.png"
+                                        src="/backgrounds/ABOUT_US_MAIN_PAGE.jpeg"
                                         alt="Engineering Legacy"
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </section>

@@ -7,7 +7,7 @@ export default function CompanyIntro() {
     return (
         <section className="py-24 bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center p-10">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -59,13 +59,13 @@ export default function CompanyIntro() {
                         transition={{ duration: 0.8 }}
                         className="relative"
                     >
-                        <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                        {/* <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl"> */}
                             <img
                                 src="/backgrounds/About.png"
                                 alt="Infrastructure Project Team"
-                                className="w-full h-full object-cover"
+                                className="w-100 h-100 object-cover aspect-square rounded-2xl overflow-hidden shadow-2xl"
                             />
-                        </div>
+                        {/* </div> */}
                         <div className="absolute -bottom-10 -left-10 bg-[#F2913F] p-8 rounded-2xl shadow-xl hidden md:block">
                             <div className="text-4xl font-black text-white mb-2">
                                 30+

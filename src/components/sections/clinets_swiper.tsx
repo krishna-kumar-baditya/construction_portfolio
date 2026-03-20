@@ -1,6 +1,12 @@
 "use client";
 
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
+import {
+    Navigation,
+    Pagination,
+    Scrollbar,
+    A11y,
+    Autoplay,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -10,62 +16,92 @@ import "swiper/css/scrollbar";
 
 // ✅ Client data (dynamic)
 const clients = [
-  { id: 1, name: "Alishan Steels Pvt Ltd", logo: "/clients/alishan.jpeg" },
-  { id: 2, name: "Carbon Resources", logo: "/clients/carbon.jpeg" },
-  { id: 3, name: "EASTERN RAILWAY", logo: "/clients/eastern.jpeg" },
-  { id: 4, name: "Karthik Alloys Ltd", logo: "/clients/karthikalloy.jpeg" },
-  { id: 5, name: "Larsen & Toubro (L&T)", logo: "/clients/L&T.jpeg" },
-  { id: 6, name: "NBCC India", logo: "/clients/nbcc.jpeg" },
-  { id: 7, name: "Neo Metaliks Ltd", logo: "/clients/neo.jpeg" },
-  { id: 8, name: "Patil Rail Infrastructure Pvt Ltd", logo: "/clients/patil.jpeg" },
-  { id: 9, name: "PCBL", logo: "/clients/pcbl.jpeg" },
-  { id: 10, name: "Reliance Infrastructure", logo: "/clients/reliance.jpeg" },
-  { id: 11, name: "Steel Authority of India Limited", logo: "/clients/sail.jpeg" },
-  { id: 12, name: "Sharp Ferro Alloys Ltd", logo: "/clients/sharpferroalloy.jpeg" },
-  { id: 13, name: "Shyam Steel", logo: "/clients/shyam-steel.jpeg" },
-  { id: 14, name: "Shyam Ferro Alloys Ltd", logo: "/clients/shyamferro.jpeg" },
-  { id: 15, name: "Surya Alloy Durgapur", logo: "/clients/suryaalloy.jpeg" },
-  { id: 16, name: "Venkateshwara Engineering Works", logo: "/clients/Venkateshwara.jpeg" },
-  { id: 17, name: "THE WEST BENGAL POWER DEVELOPMENT CORPORATION LIMITED", logo: "/clients/wbpdcl.jpeg" },
-  { id: 18, name: "Jekay wagons international", logo: "/clients/jk.png" },
-  { id: 19, name: "Maithon Power Limited", logo: "/clients/maithon.jpeg" },
-  { id: 20, name: "RAMKY INFRASTRUCTURE", logo: "/clients/ramk.jpeg" },
-  { id: 21, name: "ORISSA STEEL & POWER LTD", logo: "/clients/orissa.jpeg" },
+    { id: 1, name: "Alishan Steels Pvt Ltd", logo: "/clients/alishan.jpeg" },
+    { id: 2, name: "Carbon Resources", logo: "/clients/carbon.jpeg" },
+    { id: 3, name: "EASTERN RAILWAY", logo: "/clients/eastern.jpeg" },
+    { id: 4, name: "Karthik Alloys Ltd", logo: "/clients/karthikalloy.jpeg" },
+    { id: 5, name: "Larsen & Toubro (L&T)", logo: "/clients/L&T.jpeg" },
+    { id: 6, name: "NBCC India", logo: "/clients/nbcc.jpeg" },
+    { id: 7, name: "Neo Metaliks Ltd", logo: "/clients/neo.jpeg" },
+    {
+        id: 8,
+        name: "Patil Rail Infrastructure Pvt Ltd",
+        logo: "/clients/patil.jpeg",
+    },
+    { id: 9, name: "PCBL", logo: "/clients/pcbl.jpeg" },
+    { id: 10, name: "Reliance Infrastructure", logo: "/clients/reliance.jpeg" },
+    {
+        id: 11,
+        name: "Steel Authority of India Limited",
+        logo: "/clients/sail.jpeg",
+    },
+    {
+        id: 12,
+        name: "Sharp Ferro Alloys Ltd",
+        logo: "/clients/sharpferroalloy.jpeg",
+    },
+    { id: 13, name: "Shyam Steel", logo: "/clients/shyam-steel.jpeg" },
+    {
+        id: 14,
+        name: "Shyam Ferro Alloys Ltd",
+        logo: "/clients/shyamferro.jpeg",
+    },
+    { id: 15, name: "Surya Alloy Durgapur", logo: "/clients/suryaalloy.jpeg" },
+    {
+        id: 16,
+        name: "Venkateshwara Engineering Works",
+        logo: "/clients/Venkateshwara.jpeg",
+    },
+    {
+        id: 17,
+        name: "THE WEST BENGAL POWER DEVELOPMENT CORPORATION LIMITED",
+        logo: "/clients/wbpdcl.jpeg",
+    },
+    { id: 18, name: "Jekay wagons international", logo: "/clients/jk.png" },
+    { id: 19, name: "Maithon Power Limited", logo: "/clients/maithon.jpeg" },
+    { id: 20, name: "RAMKY INFRASTRUCTURE", logo: "/clients/ramk.jpeg" },
+    { id: 21, name: "ORISSA STEEL & POWER LTD", logo: "/clients/orissa.jpeg" },
 ];
 
 export default function ClientSlides() {
-  return (
-    <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-      spaceBetween={30}
-      slidesPerView={4}
-      loop={true}
-      autoplay={{
-        delay: 1500,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      }}
-      breakpoints={{
-        320: { slidesPerView: 1 },
-        640: { slidesPerView: 2 },
-        1024: { slidesPerView: 4 },
-      }}
-      className=" w-full"
-    >
-      {clients.map((client) => (
-        <SwiperSlide key={client.id}>
-          <div className="flex flex-col items-center justify-center p-4 w-70 transition">
-            <img
-              src={client.logo}
-              alt={client.name}
-              className="w-25 h-25 object-center object-fill mb-3"
-            />
-            <p className="font-medium text-white text-2xl text-center uppercase">
-              {client.name}
-            </p>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  );
+    return (
+        <div className="w-full px-4 sm:px-6 lg:px-12 ">
+            <Swiper
+                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                spaceBetween={30}
+                slidesPerView={4}
+                loop={true}
+                autoplay={{
+                    delay: 1500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                }}
+                breakpoints={{
+                    320: { slidesPerView: 1, spaceBetween: 10 },
+                    480: { slidesPerView: 2, spaceBetween: 12 },
+                    640: { slidesPerView: 2, spaceBetween: 16 },
+                    768: { slidesPerView: 3, spaceBetween: 20 },
+                    1024: { slidesPerView: 4, spaceBetween: 24 },
+                }}
+            >
+                {clients.map((client) => (
+                    <SwiperSlide
+                        key={client.id}
+                        // className=" border-2 border-amber-300"
+                    >
+                        <div className="flex flex-col items-center justify-center bg-white/5 backdrop-blur-md rounded-xl p-4 h-full transition hover:scale-105 ">
+                            <img
+                                src={client.logo}
+                                alt={client.name}
+                                className="w-16 h-16 md:w-25 md:h-25 object-center object-contain mb-3"
+                            />
+                            <p className="font-medium text-white text-xs text-wrap text-center uppercase">
+                                {client.name}
+                            </p>
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </div>
+    );
 }
