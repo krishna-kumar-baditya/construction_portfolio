@@ -45,7 +45,7 @@ export default function CompanyIntro() {
                         <div className="flex flex-wrap gap-4">
                             <a
                                 href="/about"
-                                className="bg-black text-white px-8 py-4 rounded-full font-bold hover:bg-[#F2913F] hover:text-white transition-all duration-300"
+                                className="bg-black text-white text-[16px] px-8 py-4 rounded-full font-bold hover:bg-[#F2913F] hover:text-white transition-all duration-300"
                             >
                                 Learn More About Us
                             </a>
@@ -63,7 +63,7 @@ export default function CompanyIntro() {
                             <img
                                 src="/backgrounds/About.png"
                                 alt="Infrastructure Project Team"
-                                className="w-100 h-100 object-cover aspect-square rounded-2xl overflow-hidden shadow-2xl"
+                                className="md:w-100 md:h-100 object-cover aspect-square rounded-2xl overflow-hidden shadow-2xl"
                             />
                         {/* </div> */}
                         <div className="absolute -bottom-10 -left-10 bg-[#F2913F] p-8 rounded-2xl shadow-xl hidden md:block">
