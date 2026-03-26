@@ -75,7 +75,7 @@ const NAV_LINKS:NavLink[] = [
     // { label: "Infrastructure", href: "/infrastructure" },
 
     { label: "Projects", href: "/projects" },
-    { label: "Gallery", href: "/gallery" },
+    // { label: "Gallery", href: "/gallery" },
     { label: "Contact", href: "/contact" },
 ];
 
