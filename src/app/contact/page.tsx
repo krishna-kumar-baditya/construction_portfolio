@@ -121,7 +121,6 @@ export default function ContactPage() {
                                             <p className="text-gray-600 leading-relaxed font-medium">
                                                 info@evergreengroupofcompanies.in
                                                 <br />
-                                                {/* info@evergreengroupofcompanies.in */}
                                             </p>
                                         </div>
                                     </div>

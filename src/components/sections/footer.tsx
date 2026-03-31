@@ -9,8 +9,8 @@ export function Footer() {
     };
 
     return (
-        <footer className="bg-black text-white pt-[80px] pb-10 font-sans">
-            <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
+        <footer className="bg-black text-white pt-20 pb-10 font-sans">
+            <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-10">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-x-8">
                     {/* Logo and Address Section */}
                     <div className="lg:col-span-4">
