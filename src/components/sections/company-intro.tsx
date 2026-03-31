@@ -23,7 +23,7 @@ export default function CompanyIntro() {
                                 Excellence Since 1988
                             </span>
                         </h3>
-                        <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                        <p className="text-lg text-justify text-gray-600 mb-8 leading-relaxed">
                             Established in 1988, Evergreen Group is a leading
                             industrial contracting company in the
                             Asansol–Durgapur industrial belt, delivering over
@@ -66,8 +66,8 @@ export default function CompanyIntro() {
                                 className="md:w-100 md:h-100 object-cover aspect-square rounded-2xl overflow-hidden shadow-2xl"
                             />
                         {/* </div> */}
-                        <div className="absolute -bottom-10 -left-10 bg-[#F2913F] p-8 rounded-2xl shadow-xl hidden md:block">
-                            <div className="text-4xl font-black text-white mb-2">
+                        <div className="absolute -bottom-10 -left-10 bg-[#F2913F] p-2 md:p-8 rounded-2xl shadow-xl md:block">
+                            <div className="text-2xl md:text-4xl font-black text-white mb-2">
                                 30+
                             </div>
                             <div className="text-white font-bold uppercase tracking-wider text-sm">
