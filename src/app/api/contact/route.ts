@@ -49,17 +49,18 @@ export async function POST(req: Request) {
     const subject = stripControlChars(parsed.data.subject).replace(/[\r\n]/g, " ");
     const message = stripControlChars(parsed.data.message);
 
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_PASS,
-      },
-    });
-
+const transporter = nodemailer.createTransport({
+  host: "smtp.hostinger.com",
+  port: 465,
+  secure: true, // true for 465
+  auth: {
+    user: process.env.EMAIL_USER, // your Hostinger email
+    pass: process.env.EMAIL_PASS, // your email password
+  },
+});
     await transporter.sendMail({
-      from: `"Website Contact Form" <${process.env.GMAIL_USER}>`,
-      to: "krishukumar139@gmail.com", // your receiving email
+      from: `"Website Contact Form" <${process.env.EMAIL_USER}>`,
+      to: "info@evergreengroupofcompanies.in", // your receiving email
       subject: `Contact Form - ${subject}`,
       html: `
         <h2>New Website Inquiry</h2>

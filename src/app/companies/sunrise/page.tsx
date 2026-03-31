@@ -64,7 +64,7 @@ export default function AboutPage() {
                                 </p>
                             </motion.div>
                             <div className="relative">
-                                <div className="aspect-video w-137.5 h-112.5 rounded-2xl overflow-hidden shadow-2xl">
+                                <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                                     <img
                                         src="/companies/SUNRISE_MOVERS_PAGE.jpeg"
                                         alt="Engineering Legacy"

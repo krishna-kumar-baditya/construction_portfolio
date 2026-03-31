@@ -62,15 +62,15 @@ export default function AboutPage() {
                                     partner in Uttar Pradesh.
                                 </p>
                             </motion.div>
-                            <div className="relative">
-                                <div className="aspect-videow-137.5 h-112.5 rounded-2xl overflow-hidden shadow-2xl">
+                            {/* <div className="relative"> */}
+                                <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                                     <img
                                         src="/companies/J_R_Agritech.jpeg"
                                         alt="Engineering Legacy"
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
                 </section>

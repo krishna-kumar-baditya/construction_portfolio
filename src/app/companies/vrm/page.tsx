@@ -55,7 +55,7 @@ export default function AboutPage() {
                                 </p>
                             </motion.div>
                             <div className="relative">
-                                <div className="aspect-video w-137.5 h-80.5 rounded-2xl overflow-hidden shadow-2xl">
+                                <div className="aspect-video  rounded-2xl overflow-hidden shadow-2xl">
                                     <img
                                         src="/companies/vrminerals.jpeg"
                                         alt="Engineering Legacy"

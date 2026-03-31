@@ -64,7 +64,7 @@ export default function AboutPage() {
                                 </p>
                             </motion.div>
                             <div className="relative">
-                                <div className="w-137.5 h-120.5 rounded-2xl overflow-hidden shadow-2xl">
+                                <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                                     <img
                                         src="/companies/EMCL_PAGE.jpeg"
                                         alt="Engineering Legacy"

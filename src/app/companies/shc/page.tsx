@@ -64,7 +64,7 @@ export default function AboutPage() {
                                 </p>
                             </motion.div>
                             <div className="relative">
-                                <div className="h-125 rounded-2xl overflow-hidden shadow-2xl">
+                                <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                                     <img
                                         src="/companies/ssky_high.jpeg"
                                         alt="Engineering Legacy"

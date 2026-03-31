@@ -42,12 +42,12 @@ export default function AboutPage() {
                                     industrial and commercial construction
                                     company in West Bengal, delivering
                                     comprehensive civil construction services
-                                    across Eastern India. Our
-                                    expertise includes land development and
-                                    layout planning, structural designing, and
-                                    complete civil construction solutions for
-                                    factories, warehouses, processing plants,
-                                    and commercial buildings. With a fully
+                                    across Eastern India. Our expertise includes
+                                    land development and layout planning,
+                                    structural designing, and complete civil
+                                    construction solutions for factories,
+                                    warehouses, processing plants, and
+                                    commercial buildings. With a fully
                                     integrated in-house setup of advanced
                                     machinery, skilled manpower, and modern
                                     equipment, we ensure seamless project
@@ -62,15 +62,15 @@ export default function AboutPage() {
                                     in the region.
                                 </p>
                             </motion.div>
-                            <div className="relative ">
-                                <div className="aspect-video w-137.5 h-112.5 rounded-2xl overflow-hidden shadow-2xl">
+                            {/* <div className="relative "> */}
+                                <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                                     <img
                                         src="/companies/ECPL_PAGE.png"
                                         alt="Engineering Legacy"
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
                 </section>
