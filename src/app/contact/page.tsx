@@ -129,13 +129,15 @@ export default function ContactPage() {
 
                                 {/* Map */}
                                 <div className="mt-16 rounded-[40px] overflow-hidden shadow-2xl h-100 border border-gray-100">
+                                    
                                     <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.654876!2d87.3123456!3d23.5432109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f771234567890!2sDurgapur%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1234567890"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6971.641967375828!2d87.27811359179152!3d23.55929051520471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f76d005d04da15%3A0xc7fcaabe67275b73!2sEvergreen%20Group%20of%20Companies!5e1!3m2!1sen!2sin!4v1774958699249!5m2!1sen!2sin"
                                         width="100%"
                                         height="100%"
                                         style={{ border: 0 }}
                                         allowFullScreen
                                         loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
                                     ></iframe>
                                 </div>
                             </motion.div>
