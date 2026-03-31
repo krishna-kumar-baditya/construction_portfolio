@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Target, Users, History } from "lucide-react";
 
 export default function AboutPage() {
     return (
@@ -62,7 +61,6 @@ export default function AboutPage() {
                                     in the region.
                                 </p>
                             </motion.div>
-                            {/* <div className="relative "> */}
                                 <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                                     <img
                                         src="/companies/ECPL_PAGE.png"
@@ -70,7 +68,6 @@ export default function AboutPage() {
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
-                            {/* </div> */}
                         </div>
                     </div>
                 </section>
