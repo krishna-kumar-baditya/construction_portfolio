@@ -54,11 +54,11 @@ export function Footer() {
 
                         <div className="space-y-4">
                             <a
-                                href="mailto:evergreen_construction@rediffmail.com"
+                                href="mailto:info@evergreengroupofcompanies.in"
                                 className="block text-[14px] text-gray-400 hover:text-[#F2913F] transition-colors"
                                 style={{ fontSize: "14px" }}
                             >
-                                evergreen_construction@rediffmail.com
+                                info@evergreengroupofcompanies.in
                             </a>
                             <a
                                 href="tel:+917001998007"

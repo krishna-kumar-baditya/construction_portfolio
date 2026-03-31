@@ -119,9 +119,9 @@ export default function ContactPage() {
                                                 Email
                                             </h3>
                                             <p className="text-gray-600 leading-relaxed font-medium">
-                                                evergreen_construction@rediffmail.com
+                                                info@evergreengroupofcompanies.in
                                                 <br />
-                                                {/* evergreen_construction@rediffmail.com */}
+                                                {/* info@evergreengroupofcompanies.in */}
                                             </p>
                                         </div>
                                     </div>
