@@ -258,7 +258,7 @@ export default function Navbar() {
                                                 onClick={() =>
                                                     setMobileMenuOpen(false)
                                                 }
-                                                className="flex items-center gap-4 px-4 py-2 text-sm font-semibold text-gray-700 hover:text-[#F2913F] transition-colors"
+                                                className="flex items-center gap-4 px-4 py-2 text-sm uppercase font-semibold text-gray-700 hover:text-[#F2913F] transition-colors"
                                             >
                                                 {sub.logo && (
                                                     <div className="w-12 h-8 bg-white rounded border flex items-center justify-center overflow-hidden">
@@ -267,11 +267,14 @@ export default function Navbar() {
                                                             alt={sub.label}
                                                             width={60}
                                                             height={40}
-                                                            className="object-contain"
+                                                            className="object-center"
                                                         />
                                                     </div>
                                                 )}
+                                                <span className=" uppercase">
+
                                                 {sub.label}
+                                                </span>
                                             </a>
                                         ))}
                                     </div>
