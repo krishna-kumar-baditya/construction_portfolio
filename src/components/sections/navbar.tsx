@@ -35,12 +35,12 @@ const NAV_LINKS: NavLink[] = [
             {
                 label: "EVERGREEN CONSTRUCTION DURGAPUR PVT. LTD.",
                 href: "/companies/ecpl",
-                logo: "/logos/ecpl.jpeg",
+                logo: "/logos/ecpl.png",
             },
             {
                 label: "EVERGREEN MANAGEMENT CONSULTANTS LLP",
                 href: "/companies/emcl",
-                logo: "/logos/emcl.jpeg",
+                logo: "/logos/emcl.png",
             },
             {
                 label: "Sunrise Movers & Logistics",
@@ -77,7 +77,6 @@ export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-    const [openAccordion, setOpenAccordion] = useState<string | null>(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -87,13 +86,10 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const toggleAccordion = (label: string) => {
-        setOpenAccordion((prev) => (prev === label ? null : label));
-    };
 
     return (
         <nav
-            className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 w-full ${
+            className={`fixed top-0 left-0 right-0 z-9999 transition-all duration-300 w-full ${
                 isScrolled ? "bg-white shadow-sm" : "bg-transparent"
             }`}
         >
