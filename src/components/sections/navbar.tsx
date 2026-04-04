@@ -35,12 +35,12 @@ const NAV_LINKS: NavLink[] = [
             {
                 label: "EVERGREEN CONSTRUCTION DURGAPUR PVT. LTD.",
                 href: "/companies/ecpl",
-                logo: "/logos/ecpl.png",
+                logo: "/logos/ecpl.jpeg",
             },
             {
                 label: "EVERGREEN MANAGEMENT CONSULTANTS LLP",
                 href: "/companies/emcl",
-                logo: "/logos/emcl.png",
+                logo: "/logos/emcl.jpeg",
             },
             {
                 label: "Sunrise Movers & Logistics",
