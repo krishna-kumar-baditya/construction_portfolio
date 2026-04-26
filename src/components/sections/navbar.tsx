@@ -60,7 +60,7 @@ const NAV_LINKS: NavLink[] = [
             {
                 label: "SSky High Pioneer Concrete LLP",
                 href: "/companies/shc",
-                logo: "/logos/sky_high.jpg",
+                logo: "/logos/sky_high.jpeg",
             },
             {
                 label: "JR AGRITECH",
