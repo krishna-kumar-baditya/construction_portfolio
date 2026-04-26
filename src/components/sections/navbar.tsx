@@ -35,32 +35,32 @@ const NAV_LINKS: NavLink[] = [
             {
                 label: "EVERGREEN CONSTRUCTION DURGAPUR PVT. LTD.",
                 href: "/companies/ecpl",
-                logo: "/logos/ecpl.jpeg",
+                logo: "/logos/ecpl.jpg",
             },
             {
                 label: "EVERGREEN MANAGEMENT CONSULTANTS LLP",
                 href: "/companies/emcl",
-                logo: "/logos/emcl.jpeg",
+                logo: "/logos/emcl.jpg",
             },
             {
                 label: "Sunrise Movers & Logistics",
                 href: "/companies/sunrise",
-                logo: "/logos/sunrise.jpeg",
+                logo: "/logos/sunrise.jpg",
             },
             {
                 label: "V.R. Minerals",
                 href: "/companies/vrm",
-                logo: "/logos/V_R_MINERALS_LOGO.jpeg",
+                logo: "/logos/V_R_MINERALS_LOGO.jpg",
             },
             {
                 label: "Evergreen Minerals Pvt. ltd.",
                 href: "/companies/minerals",
-                logo: "/logos/Evergreen_minerals.jpeg",
+                logo: "/logos/Evergreen_minerals.jpg",
             },
             {
                 label: "SSky High Pioneer Concrete LLP",
                 href: "/companies/shc",
-                logo: "/logos/sky_high.jpeg",
+                logo: "/logos/sky_high.jpg",
             },
             {
                 label: "JR AGRITECH",
